@@ -1,0 +1,12 @@
+{
+  "name": "Islam Facing the Red Tide — الإسلام في وجه الزحف الأحمر",
+  "short_name": "الزحف الأحمر",
+  "description": "Interactive trilingual app based on Sheikh Mohammed al-Ghazali's book",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#FFF5F5",
+  "theme_color": "#C62828",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": []
+}
