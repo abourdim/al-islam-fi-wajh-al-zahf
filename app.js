@@ -5,281 +5,486 @@
 const T = {
   ar: {
     appTitle: 'الإسلام في وجه الزحف الأحمر',
-    splashSub: 'الإسلام يواجه المادية والإلحاد بالحجة والبرهان',
+    splashSub: 'قيم الإسلام في مواجهة الإلحاد',
     splashHint: 'اضغط للتخطي',
     sacredRef: 'سورة الروم ٣٠: ٣٠',
-    tabHome: 'الرئيسية', tabCards: 'البطاقات', tabContrasts: 'المقارنات',
-    tabHabits: 'العادات', tabQuiz: 'اختبار', tabAbout: 'الكتاب',
-    cardsTitle: 'بطاقات المواجهة',
-    cardsDesc: '٢٠ بطاقة من كتاب الإسلام في وجه الزحف الأحمر — كل بطاقة تكشف حقيقة عن مواجهة الإسلام للفكر المادي',
-    contrastsTitle: 'الإسلام مقابل الشيوعية',
-    contrastsDesc: 'مقارنات جوهرية بين النظرة الإسلامية والمادية',
-    habitsTitle: 'عاداتي اليومية',
-    habitsDesc: 'عادات مستوحاة من مبادئ الإيمان والوعي',
-    quizTitle: 'اختبر معرفتك',
-    quizDesc: 'هل تعرف الفرق بين الرؤية الإسلامية والمادية؟',
-    helpTitle: '❓ مساعدة', duaPanelTitle: '🤲 أدعية',
-    resetBtn: 'إعادة تعيين اليوم', submitQuiz: 'اعرف النتيجة',
-    dailyLabel: '✨ فكرة اليوم', quizAgain: 'أعد الاختبار',
-    yes: 'نعم', no: 'لا', sometimes: 'أحياناً', share: 'مشاركة',
-    searchPlaceholder: 'ابحث في البطاقات...',
-    streakMsg: 'يوم متتالي!', allDone: 'أحسنت! أكملت جميع العادات!',
-    islamView: '☪️ الرؤية الإسلامية', materialView: '🔴 الرؤية المادية',
-    splashFeatures: ['٢٠ بطاقة عن مواجهة الفكر المادي','مقارنات بين الإسلام والشيوعية','عادات يومية مع تتبع مستمر','اختبار + أدعية'],
+    tabHome: 'الرئيسية', tabTraits: 'القيم', tabQuiz: 'المسابقة',
+    tabProgress: 'تقدمي', tabAbout: 'الكتاب',
+    traitsTitle: 'قيم الإسلام الخالدة',
+    traitsDesc: '١٥ قيمة إسلامية من كتاب الشيخ محمد الغزالي — كل قيمة بآية وحديث وتطبيق عملي',
+    quizTitle: '🏆 من سيصبح عالِماً؟',
+    quizDesc: 'اختبر معلوماتك عن قيم الإسلام — ٤ خيارات لكل سؤال',
+    progressTitle: 'رحلتي الفكرية',
+    progressDesc: 'تقدمك وإنجازاتك في رحلة القيم',
+    helpTitle: '❓ مساعدة',
+    duaPanelTitle: '🤲 أدعية الثبات والهداية',
+    dailyLabel: '✨ قيمة اليوم',
+    searchPlaceholder: 'ابحث في القيم...',
+    share: 'مشاركة',
+    verse: 'الآية',
+    hadith: 'الحديث',
+    apply: '💡 طبّق الآن',
+    youngMode: '🌟 مستكشف صغير',
+    teenMode: '📖 باحث شاب',
+    xpLabel: 'نقاط الخبرة',
+    levelLabel: 'المستوى',
+    streakMsg: 'يوم متتالي!',
+    readMore: 'اقرأ المزيد',
+    nextQ: 'السؤال التالي',
+    lifeline5050: '50/50',
+    lifelineHint: '💡 تلميح',
+    lifelineQuran: '📖 مرجع قرآني',
+    correct: 'أحسنت! إجابة صحيحة! 🎉',
+    wrong: 'حاول مرة أخرى 💪',
+    quizComplete: 'انتهت المسابقة!',
+    score: 'النتيجة',
+    tryAgain: 'أعد المسابقة',
+    badge_beginner: 'مبتدئ',
+    badge_reader: 'قارئ',
+    badge_scholar: 'عالم',
+    badge_persistent: 'مثابر',
+    badge_expert: 'خبير',
+    splashFeatures: [
+      '١٥ قيمة من كتاب الإسلام في وجه الزحف الأحمر',
+      'مسابقة "من سيصبح عالماً" بالمكافآت',
+      'نظام النقاط والشارات والمستويات',
+      'وضع مستكشف صغير ووضع باحث شاب'
+    ],
   },
   en: {
     appTitle: 'Islam Facing the Red Tide',
-    splashSub: 'Islam confronts materialism and atheism with evidence and reason',
+    splashSub: 'Islamic values against atheism for young minds',
     splashHint: 'tap to skip',
     sacredRef: 'Surah Ar-Rum 30:30',
-    tabHome: 'Home', tabCards: 'Cards', tabContrasts: 'Contrasts',
-    tabHabits: 'Habits', tabQuiz: 'Quiz', tabAbout: 'Book',
-    cardsTitle: 'Confrontation Cards',
-    cardsDesc: '20 cards from Islam Facing the Red Tide — each reveals a truth about Islam\'s response to materialist ideology',
-    contrastsTitle: 'Islam vs. Communism',
-    contrastsDesc: 'Fundamental contrasts between the Islamic and materialist worldviews',
-    habitsTitle: 'My Daily Habits',
-    habitsDesc: 'Habits inspired by principles of faith and awareness',
-    quizTitle: 'Test Your Knowledge',
-    quizDesc: 'Do you know the difference between the Islamic and materialist worldviews?',
-    helpTitle: '❓ Help', duaPanelTitle: '🤲 Duas',
-    resetBtn: 'Reset Today', submitQuiz: 'See Results',
-    dailyLabel: '✨ Today\'s Insight', quizAgain: 'Retake Quiz',
-    yes: 'Yes', no: 'No', sometimes: 'Sometimes', share: 'Share',
-    searchPlaceholder: 'Search cards...',
-    streakMsg: 'day streak!', allDone: 'Well done! All habits completed!',
-    islamView: '☪️ Islamic View', materialView: '🔴 Materialist View',
-    splashFeatures: ['20 cards on confronting materialist ideology','Contrasts between Islam and communism','Daily habits with streak tracking','Quiz + duas'],
+    tabHome: 'Home', tabTraits: 'Values', tabQuiz: 'Quiz',
+    tabProgress: 'Progress', tabAbout: 'Book',
+    traitsTitle: 'Eternal Islamic Values',
+    traitsDesc: '15 Islamic values from Sheikh al-Ghazali — each with a verse, hadith, and practical application',
+    quizTitle: '🏆 Who Wants to Be a Scholar?',
+    quizDesc: 'Test your knowledge of Islamic values — 4 choices per question',
+    progressTitle: 'My Intellectual Journey',
+    progressDesc: 'Your progress and achievements in the values journey',
+    helpTitle: '❓ Help',
+    duaPanelTitle: '🤲 Duas for Steadfastness & Guidance',
+    dailyLabel: "✨ Today's Value",
+    searchPlaceholder: 'Search values...',
+    share: 'Share',
+    verse: 'Verse',
+    hadith: 'Hadith',
+    apply: '💡 Apply Now',
+    youngMode: '🌟 Young Explorer',
+    teenMode: '📖 Teen Scholar',
+    xpLabel: 'Experience Points',
+    levelLabel: 'Level',
+    streakMsg: 'day streak!',
+    readMore: 'Read More',
+    nextQ: 'Next Question',
+    lifeline5050: '50/50',
+    lifelineHint: '💡 Hint',
+    lifelineQuran: '📖 Quran Ref',
+    correct: 'Well done! Correct answer! 🎉',
+    wrong: 'Try again next time 💪',
+    quizComplete: 'Quiz Complete!',
+    score: 'Score',
+    tryAgain: 'Retry Quiz',
+    badge_beginner: 'Beginner',
+    badge_reader: 'Reader',
+    badge_scholar: 'Scholar',
+    badge_persistent: 'Persistent',
+    badge_expert: 'Expert',
+    splashFeatures: [
+      '15 Islamic values from Islam Facing the Red Tide',
+      '"Who Wants to Be a Scholar?" quiz with rewards',
+      'Points, badges, and level system',
+      'Young Explorer and Teen Scholar modes'
+    ],
   },
   fr: {
     appTitle: 'L\'Islam Face a la Maree Rouge',
-    splashSub: 'L\'Islam confronte le materialisme et l\'atheisme avec des preuves et la raison',
+    splashSub: 'Les valeurs islamiques face a l\'atheisme pour les jeunes',
     splashHint: 'appuyez pour passer',
     sacredRef: 'Sourate Ar-Rum 30:30',
-    tabHome: 'Accueil', tabCards: 'Cartes', tabContrasts: 'Contrastes',
-    tabHabits: 'Habitudes', tabQuiz: 'Quiz', tabAbout: 'Livre',
-    cardsTitle: 'Cartes de Confrontation',
-    cardsDesc: '20 cartes du livre L\'Islam Face a la Maree Rouge — chacune revele une verite sur la reponse de l\'Islam au materialisme',
-    contrastsTitle: 'Islam vs. Communisme',
-    contrastsDesc: 'Contrastes fondamentaux entre les visions islamique et materialiste',
-    habitsTitle: 'Mes Habitudes Quotidiennes',
-    habitsDesc: 'Habitudes inspirees des principes de foi et de conscience',
-    quizTitle: 'Testez Vos Connaissances',
-    quizDesc: 'Connaissez-vous la difference entre les visions islamique et materialiste ?',
-    helpTitle: '❓ Aide', duaPanelTitle: '🤲 Duas',
-    resetBtn: 'Reinitialiser', submitQuiz: 'Voir les Resultats',
-    dailyLabel: '✨ Pensee du Jour', quizAgain: 'Refaire le Quiz',
-    yes: 'Oui', no: 'Non', sometimes: 'Parfois', share: 'Partager',
-    searchPlaceholder: 'Rechercher les cartes...',
-    streakMsg: 'jours consecutifs !', allDone: 'Bravo ! Toutes les habitudes accomplies !',
-    islamView: '☪️ Vision Islamique', materialView: '🔴 Vision Materialiste',
-    splashFeatures: ['20 cartes sur la confrontation du materialisme','Contrastes entre Islam et communisme','Habitudes quotidiennes avec suivi','Quiz + duas'],
+    tabHome: 'Accueil', tabTraits: 'Valeurs', tabQuiz: 'Quiz',
+    tabProgress: 'Progres', tabAbout: 'Livre',
+    traitsTitle: 'Valeurs Islamiques Eternelles',
+    traitsDesc: '15 valeurs islamiques du livre du Sheikh al-Ghazali — chacune avec un verset, un hadith et une application pratique',
+    quizTitle: '🏆 Qui Veut Devenir Savant ?',
+    quizDesc: 'Testez vos connaissances sur les valeurs islamiques — 4 choix par question',
+    progressTitle: 'Mon Parcours Intellectuel',
+    progressDesc: 'Vos progres et realisations dans le parcours des valeurs',
+    helpTitle: '❓ Aide',
+    duaPanelTitle: '🤲 Duas pour la Fermete et la Guidance',
+    dailyLabel: '✨ Valeur du Jour',
+    searchPlaceholder: 'Rechercher les valeurs...',
+    share: 'Partager',
+    verse: 'Verset',
+    hadith: 'Hadith',
+    apply: '💡 Appliquez Maintenant',
+    youngMode: '🌟 Jeune Explorateur',
+    teenMode: '📖 Jeune Chercheur',
+    xpLabel: "Points d'Experience",
+    levelLabel: 'Niveau',
+    streakMsg: 'jours consecutifs !',
+    readMore: 'Lire Plus',
+    nextQ: 'Question Suivante',
+    lifeline5050: '50/50',
+    lifelineHint: '💡 Indice',
+    lifelineQuran: '📖 Ref. Coran',
+    correct: 'Bravo ! Bonne reponse ! 🎉',
+    wrong: 'Reessayez la prochaine fois 💪',
+    quizComplete: 'Quiz Termine !',
+    score: 'Score',
+    tryAgain: 'Refaire le Quiz',
+    badge_beginner: 'Debutant',
+    badge_reader: 'Lecteur',
+    badge_scholar: 'Savant',
+    badge_persistent: 'Perseverant',
+    badge_expert: 'Expert',
+    splashFeatures: [
+      '15 valeurs islamiques du livre L\'Islam Face a la Maree Rouge',
+      'Quiz « Qui Veut Devenir Savant ? » avec recompenses',
+      'Systeme de points, badges et niveaux',
+      'Modes Jeune Explorateur et Jeune Chercheur'
+    ],
   }
 };
 
-// ═══════════════ CARDS DATA (20 cards) ═══════════════
-const CARDS = [
-  {id:1, emoji:'🕌', ar:{title:'الإسلام يواجه الإلحاد',desc:'الإلحاد ليس علماً بل موقف فلسفي عاجز عن تفسير الوجود. الإسلام يقدم تفسيراً شاملاً للكون والحياة والغاية.',verse:'أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ أَمْ هُمُ الْخَالِقُونَ',verseRef:'الطور: ٣٥',lesson:'الإيمان بالله أقوى إجابة عن سؤال الوجود'}, en:{title:'Islam Confronts Atheism',desc:'Atheism is not science but a philosophical stance incapable of explaining existence. Islam provides a comprehensive explanation of the universe, life, and purpose.',verse:'Were they created by nothing, or were they the creators?',verseRef:'At-Tur: 35',lesson:'Faith in God is the strongest answer to the question of existence'}, fr:{title:'L\'Islam Confronte l\'Atheisme',desc:'L\'atheisme n\'est pas une science mais une position philosophique incapable d\'expliquer l\'existence. L\'Islam offre une explication complete.',verse:'Ont-ils ete crees a partir de rien ou sont-ils les createurs ?',verseRef:'At-Tur: 35',lesson:'La foi en Dieu est la reponse la plus forte a la question de l\'existence'}},
-  {id:2, emoji:'💰', ar:{title:'المادية تختزل الإنسان',desc:'الشيوعية ترى الإنسان مجرد آلة اقتصادية. الإسلام يرى فيه خليفة الله في الأرض، له روح وعقل وكرامة لا تُقدّر بثمن.',verse:'وَلَقَدْ كَرَّمْنَا بَنِي آدَمَ',verseRef:'الإسراء: ٧٠',lesson:'الإنسان أعظم من أن يُختزل في بُعد مادي واحد'}, en:{title:'Materialism Reduces Humans',desc:'Communism sees humans as mere economic machines. Islam sees them as God\'s vicegerents on earth, with spirit, intellect, and priceless dignity.',verse:'And We have certainly honored the children of Adam',verseRef:'Al-Isra: 70',lesson:'Humans are greater than being reduced to a single material dimension'}, fr:{title:'Le Materialisme Reduit l\'Homme',desc:'Le communisme voit l\'homme comme une simple machine economique. L\'Islam le voit comme le vicaire de Dieu sur terre, avec esprit, intellect et dignite.',verse:'Nous avons certes honore les fils d\'Adam',verseRef:'Al-Isra: 70',lesson:'L\'homme est plus grand que d\'etre reduit a une seule dimension materielle'}},
-  {id:3, emoji:'🔬', ar:{title:'العلم لا ينفي الإيمان',desc:'ادّعت الشيوعية أن العلم ينفي الدين. الحقيقة أن أعظم العلماء كانوا مؤمنين. العلم يكشف عظمة الخالق لا ينفيه.',verse:'إِنَّمَا يَخْشَى اللَّهَ مِنْ عِبَادِهِ الْعُلَمَاءُ',verseRef:'فاطر: ٢٨',lesson:'كلما تعمّق العالِم في العلم ازداد إيماناً'}, en:{title:'Science Does Not Negate Faith',desc:'Communism claimed science negates religion. The truth is that the greatest scientists were believers. Science reveals the Creator\'s greatness, not negates Him.',verse:'Only those fear God, from among His servants, who have knowledge',verseRef:'Fatir: 28',lesson:'The deeper a scientist goes, the more faith grows'}, fr:{title:'La Science Ne Nie Pas la Foi',desc:'Le communisme pretendait que la science nie la religion. La verite est que les plus grands scientifiques etaient croyants.',verse:'Seuls craignent Dieu, parmi Ses serviteurs, ceux qui possedent le savoir',verseRef:'Fatir: 28',lesson:'Plus un scientifique approfondit, plus la foi grandit'}},
-  {id:4, emoji:'⚖️', ar:{title:'العدالة الاجتماعية في الإسلام',desc:'الإسلام سبق الشيوعية في محاربة الفقر والظلم. لكنه فعل ذلك بالرحمة لا بالعنف، وبالزكاة لا بالمصادرة.',verse:'كَيْ لَا يَكُونَ دُولَةً بَيْنَ الْأَغْنِيَاءِ مِنكُمْ',verseRef:'الحشر: ٧',lesson:'العدالة الإسلامية توازن بين الحق الفردي والجماعي'}, en:{title:'Social Justice in Islam',desc:'Islam preceded communism in fighting poverty and injustice. But it did so with mercy, not violence, and with zakat, not confiscation.',verse:'So that it will not be a perpetual distribution among the rich',verseRef:'Al-Hashr: 7',lesson:'Islamic justice balances individual and collective rights'}, fr:{title:'La Justice Sociale en Islam',desc:'L\'Islam a precede le communisme dans la lutte contre la pauvrete. Mais il l\'a fait avec misericorde, pas violence, avec la zakat, pas la confiscation.',verse:'Afin que cela ne circule pas seulement entre les riches',verseRef:'Al-Hashr: 7',lesson:'La justice islamique equilibre droits individuels et collectifs'}},
-  {id:5, emoji:'🏠', ar:{title:'الملكية الفردية في الإسلام',desc:'الإسلام يحمي الملكية الفردية ويعتبرها حقاً مشروعاً، لكنه يوجبها بالطرق الحلال ويفرض عليها حقوقاً للمجتمع كالزكاة.',verse:'وَلَا تَأْكُلُوا أَمْوَالَكُم بَيْنَكُم بِالْبَاطِلِ',verseRef:'البقرة: ١٨٨',lesson:'الملكية حق مقيّد بالعدل والمصلحة العامة'}, en:{title:'Private Property in Islam',desc:'Islam protects private property as a legitimate right, but requires it to be earned through lawful means and imposes social duties like zakat.',verse:'And do not consume one another\'s wealth unjustly',verseRef:'Al-Baqarah: 188',lesson:'Property is a right bounded by justice and public interest'}, fr:{title:'La Propriete Privee en Islam',desc:'L\'Islam protege la propriete privee comme un droit legitime, mais exige qu\'elle soit acquise legalement et impose des devoirs sociaux comme la zakat.',verse:'Ne mangez pas vos biens entre vous injustement',verseRef:'Al-Baqarah: 188',lesson:'La propriete est un droit limite par la justice et l\'interet public'}},
-  {id:6, emoji:'🔴', ar:{title:'سقوط الشيوعية حتمي',desc:'نظام يُنكر الفطرة البشرية ويقمع الحرية محكوم عليه بالسقوط. التاريخ أثبت أن الشيوعية فشلت حيثما طُبّقت.',verse:'فَأَمَّا الزَّبَدُ فَيَذْهَبُ جُفَاءً',verseRef:'الرعد: ١٧',lesson:'الباطل زائل مهما بدا قوياً'}, en:{title:'The Fall of Communism Is Inevitable',desc:'A system that denies human nature and suppresses freedom is doomed to fall. History proved communism failed wherever it was applied.',verse:'As for the foam, it vanishes',verseRef:'Ar-Ra\'d: 17',lesson:'Falsehood perishes no matter how powerful it seems'}, fr:{title:'La Chute du Communisme Est Inevitable',desc:'Un systeme qui nie la nature humaine et supprime la liberte est voue a l\'echec. L\'histoire a prouve que le communisme a echoue partout.',verse:'L\'ecume disparait',verseRef:'Ar-Ra\'d: 17',lesson:'Le faux disparait, peu importe sa force apparente'}},
-  {id:7, emoji:'👨‍👩‍👧‍👦', ar:{title:'الأسرة في الإسلام والشيوعية',desc:'الشيوعية حاولت تفكيك الأسرة. الإسلام يعتبر الأسرة نواة المجتمع وأساس التربية والاستقرار.',verse:'وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا',verseRef:'الروم: ٢١',lesson:'الأسرة المتماسكة أقوى حصن ضد الانحلال'}, en:{title:'Family in Islam vs. Communism',desc:'Communism tried to dismantle the family. Islam considers the family the nucleus of society and the foundation of upbringing and stability.',verse:'And among His signs is that He created for you mates from among yourselves',verseRef:'Ar-Rum: 21',lesson:'A strong family is the strongest fortress against dissolution'}, fr:{title:'La Famille en Islam vs. Communisme',desc:'Le communisme a tente de demanteler la famille. L\'Islam considere la famille comme le noyau de la societe et le fondement de l\'education.',verse:'Parmi Ses signes, Il a cree pour vous des epouses tirees de vous-memes',verseRef:'Ar-Rum: 21',lesson:'Une famille forte est le meilleur rempart contre la dissolution'}},
-  {id:8, emoji:'🧠', ar:{title:'حرية الفكر',desc:'الشيوعية تفرض فكراً واحداً وتقمع المخالف. الإسلام يدعو للتفكر والحوار ويحترم العقل البشري.',verse:'قُلْ هَاتُوا بُرْهَانَكُمْ إِن كُنتُمْ صَادِقِينَ',verseRef:'البقرة: ١١١',lesson:'الإسلام يحترم العقل ويدعو للحوار لا القمع'}, en:{title:'Freedom of Thought',desc:'Communism imposes one ideology and suppresses dissent. Islam invites reflection and dialogue, respecting human intellect.',verse:'Say: Produce your proof if you are truthful',verseRef:'Al-Baqarah: 111',lesson:'Islam respects the intellect and invites dialogue, not suppression'}, fr:{title:'Liberte de Pensee',desc:'Le communisme impose une seule ideologie et supprime la dissidence. L\'Islam invite a la reflexion et au dialogue.',verse:'Dis : Apportez votre preuve si vous etes veridiques',verseRef:'Al-Baqarah: 111',lesson:'L\'Islam respecte l\'intellect et invite au dialogue, pas a la suppression'}},
-  {id:9, emoji:'💎', ar:{title:'الروحانية مقابل المادية',desc:'الإنسان ليس مادة فقط. فيه روح تتوق للمعنى والجمال والسكينة. المادية تجاهلت هذا البُعد فأنتجت قلقاً وفراغاً.',verse:'أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ',verseRef:'الرعد: ٢٨',lesson:'السكينة الحقيقية في الإيمان لا في المادة'}, en:{title:'Spirituality vs. Materialism',desc:'Humans are not just matter. They have a spirit that yearns for meaning, beauty, and peace. Materialism ignored this dimension, producing anxiety and emptiness.',verse:'Verily, in the remembrance of God do hearts find rest',verseRef:'Ar-Ra\'d: 28',lesson:'True peace is in faith, not in material possessions'}, fr:{title:'Spiritualite vs. Materialisme',desc:'L\'homme n\'est pas que matiere. Il a un esprit qui aspire au sens, a la beaute et a la paix. Le materialisme a ignore cette dimension.',verse:'N\'est-ce pas par le rappel de Dieu que les coeurs se tranquillisent',verseRef:'Ar-Ra\'d: 28',lesson:'La vraie paix est dans la foi, pas dans les possessions materielles'}},
-  {id:10, emoji:'📜', ar:{title:'الأخلاق ثابتة لا نسبية',desc:'الشيوعية جعلت الأخلاق نسبية تتغير حسب المصلحة. الإسلام يؤسس الأخلاق على أسس إلهية ثابتة لا تتبدل.',verse:'وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِيمٍ',verseRef:'القلم: ٤',lesson:'الأخلاق الثابتة حصن المجتمع من الفوضى'}, en:{title:'Morality Is Absolute, Not Relative',desc:'Communism made morality relative, changing with interests. Islam establishes morality on divine foundations that do not change.',verse:'And indeed, you are of a great moral character',verseRef:'Al-Qalam: 4',lesson:'Fixed morality is society\'s fortress against chaos'}, fr:{title:'La Morale Est Absolue, Pas Relative',desc:'Le communisme a rendu la morale relative, changeant selon les interets. L\'Islam etablit la morale sur des fondements divins immuables.',verse:'Tu es certes d\'un caractere eminent',verseRef:'Al-Qalam: 4',lesson:'La morale fixe est le rempart de la societe contre le chaos'}},
-  {id:11, emoji:'🌏', ar:{title:'الأممية الإسلامية',desc:'الإسلام سبق الشيوعية في فكرة الأخوّة العالمية. لكنه بناها على الإيمان والتقوى لا على الصراع الطبقي.',verse:'يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ',verseRef:'الحجرات: ١٣',lesson:'الأخوّة الإسلامية تتجاوز العرق واللون والطبقة'}, en:{title:'Islamic Internationalism',desc:'Islam preceded communism in the idea of global brotherhood. But it built it on faith and righteousness, not class struggle.',verse:'O mankind, We have created you from male and female',verseRef:'Al-Hujurat: 13',lesson:'Islamic brotherhood transcends race, color, and class'}, fr:{title:'L\'Internationalisme Islamique',desc:'L\'Islam a precede le communisme dans l\'idee de fraternite universelle. Mais il l\'a construite sur la foi, pas la lutte des classes.',verse:'O hommes, Nous vous avons crees d\'un male et d\'une femelle',verseRef:'Al-Hujurat: 13',lesson:'La fraternite islamique transcende la race, la couleur et la classe'}},
-  {id:12, emoji:'🩸', ar:{title:'العنف ليس الحل',desc:'الشيوعية تبني على الصراع والعنف الطبقي. الإسلام يدعو للإصلاح بالحكمة والموعظة الحسنة والعدل.',verse:'ادْعُ إِلَىٰ سَبِيلِ رَبِّكَ بِالْحِكْمَةِ وَالْمَوْعِظَةِ الْحَسَنَةِ',verseRef:'النحل: ١٢٥',lesson:'الإصلاح بالحكمة أبقى من الثورة بالعنف'}, en:{title:'Violence Is Not the Solution',desc:'Communism builds on class conflict and violence. Islam calls for reform through wisdom, good counsel, and justice.',verse:'Invite to the way of your Lord with wisdom and good instruction',verseRef:'An-Nahl: 125',lesson:'Reform through wisdom outlasts revolution through violence'}, fr:{title:'La Violence N\'est Pas la Solution',desc:'Le communisme se construit sur le conflit de classe et la violence. L\'Islam appelle a la reforme par la sagesse et le bon conseil.',verse:'Appelle au sentier de ton Seigneur par la sagesse et la bonne exhortation',verseRef:'An-Nahl: 125',lesson:'La reforme par la sagesse dure plus que la revolution par la violence'}},
-  {id:13, emoji:'🏭', ar:{title:'العمل في الإسلام',desc:'الإسلام يكرّم العمل ويعتبره عبادة. لكنه لا يختزل الإنسان في عامل. العامل في الإسلام له حقوق وكرامة.',verse:'وَقُلِ اعْمَلُوا فَسَيَرَى اللَّهُ عَمَلَكُمْ',verseRef:'التوبة: ١٠٥',lesson:'العمل عبادة والعامل مكرّم'}, en:{title:'Work in Islam',desc:'Islam honors work and considers it worship. But it does not reduce humans to workers. Workers in Islam have rights and dignity.',verse:'And say: Work, for God will see your work',verseRef:'At-Tawbah: 105',lesson:'Work is worship and workers are honored'}, fr:{title:'Le Travail en Islam',desc:'L\'Islam honore le travail et le considere comme une adoration. Mais il ne reduit pas l\'homme a un simple travailleur.',verse:'Dis : Oeuvrez, car Dieu verra votre oeuvre',verseRef:'At-Tawbah: 105',lesson:'Le travail est une adoration et les travailleurs sont honores'}},
-  {id:14, emoji:'📚', ar:{title:'التعليم للجميع',desc:'الإسلام أوجب طلب العلم على كل مسلم ومسلمة. لم ينتظر الثورة الصناعية ليكتشف أهمية التعليم.',verse:'اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ',verseRef:'العلق: ١',lesson:'طلب العلم فريضة إسلامية سبقت كل الأيديولوجيات'}, en:{title:'Education for All',desc:'Islam made seeking knowledge obligatory for every Muslim, male and female. It did not wait for the industrial revolution to discover the importance of education.',verse:'Read in the name of your Lord who created',verseRef:'Al-Alaq: 1',lesson:'Seeking knowledge is an Islamic obligation that preceded all ideologies'}, fr:{title:'L\'Education pour Tous',desc:'L\'Islam a rendu la quete du savoir obligatoire pour tout musulman. Il n\'a pas attendu la revolution industrielle pour decouvrir l\'importance de l\'education.',verse:'Lis, au nom de ton Seigneur qui a cree',verseRef:'Al-Alaq: 1',lesson:'La quete du savoir est une obligation islamique qui a precede toutes les ideologies'}},
-  {id:15, emoji:'🌍', ar:{title:'السياق التاريخي',desc:'ظهرت الشيوعية كردة فعل على ظلم الكنيسة والإقطاع في أوروبا. الإسلام لم يعرف هذا الصراع لأنه لم يفصل الدين عن العدل.',verse:'لَقَدْ أَرْسَلْنَا رُسُلَنَا بِالْبَيِّنَاتِ',verseRef:'الحديد: ٢٥',lesson:'فهم السياق التاريخي يكشف أصل المشكلة'}, en:{title:'Historical Context',desc:'Communism emerged as a reaction to Church oppression and feudalism in Europe. Islam never knew this conflict because it never separated religion from justice.',verse:'We sent Our messengers with clear proofs',verseRef:'Al-Hadid: 25',lesson:'Understanding historical context reveals the root of the problem'}, fr:{title:'Contexte Historique',desc:'Le communisme a emerge comme reaction a l\'oppression de l\'Eglise et au feodalisme en Europe. L\'Islam n\'a jamais connu ce conflit.',verse:'Nous avons envoye Nos messagers avec des preuves claires',verseRef:'Al-Hadid: 25',lesson:'Comprendre le contexte historique revele la racine du probleme'}},
-  {id:16, emoji:'🕊️', ar:{title:'الحرية الحقيقية',desc:'الشيوعية وعدت بالحرية لكنها أنتجت أبشع الدكتاتوريات. الحرية الحقيقية في عبودية الله لا عبودية البشر.',verse:'لَا إِكْرَاهَ فِي الدِّينِ',verseRef:'البقرة: ٢٥٦',lesson:'العبودية لله تحرر من عبودية البشر'}, en:{title:'True Freedom',desc:'Communism promised freedom but produced the worst dictatorships. True freedom is in servitude to God, not to humans.',verse:'There shall be no compulsion in religion',verseRef:'Al-Baqarah: 256',lesson:'Servitude to God liberates from servitude to humans'}, fr:{title:'La Vraie Liberte',desc:'Le communisme a promis la liberte mais a produit les pires dictatures. La vraie liberte est dans la servitude a Dieu, pas aux hommes.',verse:'Nulle contrainte en religion',verseRef:'Al-Baqarah: 256',lesson:'La servitude a Dieu libere de la servitude aux hommes'}},
-  {id:17, emoji:'📊', ar:{title:'الاقتصاد الإسلامي المتوازن',desc:'الإسلام لا رأسمالي متوحش ولا شيوعي قامع. هو نظام وسط يحمي الملكية ويفرض العدالة.',verse:'وَكَذَٰلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا',verseRef:'البقرة: ١٤٣',lesson:'الوسطية هي طريق الإسلام في كل شيء'}, en:{title:'Balanced Islamic Economics',desc:'Islam is neither savage capitalism nor oppressive communism. It is a middle system that protects property and enforces justice.',verse:'And thus We have made you a moderate nation',verseRef:'Al-Baqarah: 143',lesson:'Moderation is Islam\'s path in everything'}, fr:{title:'L\'Economie Islamique Equilibree',desc:'L\'Islam n\'est ni un capitalisme sauvage ni un communisme oppressif. C\'est un systeme intermediaire qui protege la propriete et impose la justice.',verse:'Ainsi Nous avons fait de vous une communaute du juste milieu',verseRef:'Al-Baqarah: 143',lesson:'La moderation est la voie de l\'Islam en toute chose'}},
-  {id:18, emoji:'🎯', ar:{title:'الغاية من الحياة',desc:'الشيوعية لا تقدم إجابة عن غاية الوجود. الإسلام يجيب: خُلقنا لعبادة الله وعمارة الأرض بالعدل.',verse:'وَمَا خَلَقْتُ الْجِنَّ وَالْإِنسَ إِلَّا لِيَعْبُدُونِ',verseRef:'الذاريات: ٥٦',lesson:'الحياة بلا غاية فراغ لا تملؤه المادة'}, en:{title:'The Purpose of Life',desc:'Communism offers no answer to the purpose of existence. Islam answers: we were created to worship God and build the earth with justice.',verse:'I did not create the jinn and mankind except to worship Me',verseRef:'Adh-Dhariyat: 56',lesson:'Life without purpose is a void that matter cannot fill'}, fr:{title:'Le But de la Vie',desc:'Le communisme n\'offre aucune reponse au but de l\'existence. L\'Islam repond : nous avons ete crees pour adorer Dieu et construire la terre avec justice.',verse:'Je n\'ai cree les djinns et les humains que pour qu\'ils M\'adorent',verseRef:'Adh-Dhariyat: 56',lesson:'La vie sans but est un vide que la matiere ne peut combler'}},
-  {id:19, emoji:'⭐', ar:{title:'الفطرة البشرية',desc:'الشيوعية تنكر الفطرة وتدّعي أن البيئة تشكّل كل شيء. الإسلام يؤكد أن الله فطر الناس على التوحيد.',verse:'فِطْرَتَ اللَّهِ الَّتِي فَطَرَ النَّاسَ عَلَيْهَا',verseRef:'الروم: ٣٠',lesson:'الفطرة السليمة تهدي للإيمان'}, en:{title:'Human Nature',desc:'Communism denies innate nature, claiming environment shapes everything. Islam affirms that God created humans with an innate disposition toward monotheism.',verse:'The natural disposition of God upon which He created mankind',verseRef:'Ar-Rum: 30',lesson:'Sound natural disposition leads to faith'}, fr:{title:'La Nature Humaine',desc:'Le communisme nie la nature innee, pretendant que l\'environnement forme tout. L\'Islam affirme que Dieu a cree les humains avec une disposition innee vers le monotheisme.',verse:'La nature originelle de Dieu selon laquelle Il a cree les gens',verseRef:'Ar-Rum: 30',lesson:'La disposition naturelle saine mene a la foi'}},
-  {id:20, emoji:'🌅', ar:{title:'المستقبل للإسلام',desc:'الباطل يزول مهما علا. الإسلام باقٍ لأنه الحق، والحق ينتصر دائماً. الشيوعية سقطت والإسلام باقٍ.',verse:'جَاءَ الْحَقُّ وَزَهَقَ الْبَاطِلُ إِنَّ الْبَاطِلَ كَانَ زَهُوقًا',verseRef:'الإسراء: ٨١',lesson:'الحق ينتصر دائماً والباطل يزول'}, en:{title:'The Future Belongs to Islam',desc:'Falsehood perishes no matter how high it rises. Islam endures because it is the truth, and truth always prevails. Communism fell; Islam remains.',verse:'Truth has come and falsehood has departed. Indeed, falsehood is ever bound to depart',verseRef:'Al-Isra: 81',lesson:'Truth always prevails and falsehood always perishes'}, fr:{title:'L\'Avenir Appartient a l\'Islam',desc:'Le faux disparait, peu importe sa grandeur. L\'Islam perdure car il est la verite. Le communisme est tombe ; l\'Islam reste.',verse:'La verite est venue et le faux a disparu. Le faux est voue a disparaitre',verseRef:'Al-Isra: 81',lesson:'La verite triomphe toujours et le faux disparait toujours'}}
+// ═══════════════ 15 ISLAMIC VALUES DATA ═══════════════
+const TRAITS = [
+  {
+    id:1, emoji:'🌅',
+    ar:{title:'الإيمان بالله يدحض الإلحاد',desc:'الإيمان بالله فطرة في كل إنسان. الكون بتصميمه المذهل يشهد بوجود خالق حكيم. الإلحاد لا يستطيع تفسير أصل الحياة ولا الوعي ولا النظام الكوني. العلم الحقيقي يقود إلى الإيمان لا إلى الإنكار.',verse:'فِطْرَتَ اللَّهِ الَّتِي فَطَرَ النَّاسَ عَلَيْهَا لَا تَبْدِيلَ لِخَلْقِ اللَّهِ',verseRef:'الروم ٣٠',hadith:'كل مولود يُولد على الفطرة — متفق عليه',action:'تأمل في الكون اليوم: النجوم والجبال والبحار — واسأل: من صمّم كل هذا بهذا الجمال؟',young:'الله خلق كل شيء! انظر حولك — الأشجار والنجوم والبحار — كلها تقول: الله موجود! 🌅'},
+    en:{title:'Faith in God Refutes Atheism',desc:'Faith in God is a natural instinct in every human. The universe with its amazing design testifies to the existence of a wise Creator. Atheism cannot explain the origin of life, consciousness, or cosmic order. True science leads to faith, not denial.',verse:'The nature of Allah upon which He created mankind — no change should there be in the creation of Allah',verseRef:'Ar-Rum 30',hadith:'Every child is born with the natural instinct (fitrah) — Agreed upon',action:'Reflect on the universe today: the stars, mountains, and seas — ask: who designed all this with such beauty?',young:'Allah created everything! Look around you — trees, stars, and seas — they all say: Allah exists! 🌅'},
+    fr:{title:'La Foi en Dieu Refute l\'Atheisme',desc:'La foi en Dieu est un instinct naturel en chaque humain. L\'univers avec son design etonnant temoigne de l\'existence d\'un Createur sage. L\'atheisme ne peut expliquer l\'origine de la vie, de la conscience ou de l\'ordre cosmique. La vraie science mene a la foi, pas au deni.',verse:'La nature d\'Allah selon laquelle Il a cree les gens — pas de changement dans la creation d\'Allah',verseRef:'Ar-Rum 30',hadith:'Chaque enfant nait avec l\'instinct naturel (fitrah) — Unanimement reconnu',action:'Reflechissez a l\'univers aujourd\'hui : les etoiles, les montagnes et les mers — demandez : qui a concu tout cela avec tant de beaute ?',young:'Allah a tout cree ! Regarde autour de toi — les arbres, les etoiles et les mers — ils disent tous : Allah existe ! 🌅'}
+  },
+  {
+    id:2, emoji:'✨',
+    ar:{title:'الروح أسمى من المادة',desc:'الإنسان ليس مجرد آلة مادية. فيه روح ووجدان وضمير. المادية تحوّل الإنسان إلى حيوان يبحث عن الطعام فقط. الإسلام يوازن بين حاجات الجسد وتطلعات الروح. السعادة الحقيقية في الإيمان لا في الاستهلاك.',verse:'وَنَفَخْتُ فِيهِ مِنْ رُوحِي',verseRef:'الحجر ٢٩',hadith:'ليس الغنى عن كثرة العرض ولكن الغنى غنى النفس — متفق عليه',action:'خصص وقتاً اليوم لروحك: صلِّ بخشوع، اقرأ القرآن، أو تأمل في نعم الله',young:'أنت لست فقط جسداً! عندك قلب يشعر وروح تحب الله — اعتنِ بروحك كما تعتني بجسمك ✨'},
+    en:{title:'Spirit Is Higher Than Matter',desc:'A human is not just a material machine. There is a spirit, emotions, and conscience. Materialism turns humans into animals seeking only food. Islam balances bodily needs with spiritual aspirations. True happiness lies in faith, not consumption.',verse:'And I breathed into him of My spirit',verseRef:'Al-Hijr 29',hadith:'Richness is not in having many possessions, but richness is the richness of the soul — Agreed upon',action:'Dedicate time today to your spirit: pray with focus, read Quran, or reflect on Allah\'s blessings',young:'You are not just a body! You have a heart that feels and a spirit that loves Allah — take care of your spirit just like your body ✨'},
+    fr:{title:'L\'Esprit Est Superieur a la Matiere',desc:'L\'humain n\'est pas qu\'une machine materielle. Il y a un esprit, des emotions et une conscience. Le materialisme transforme les humains en animaux ne cherchant que la nourriture. L\'Islam equilibre les besoins du corps avec les aspirations de l\'esprit. Le vrai bonheur reside dans la foi, pas la consommation.',verse:'Et J\'ai insuffle en lui de Mon esprit',verseRef:'Al-Hijr 29',hadith:'La richesse n\'est pas dans l\'abondance des biens, mais la richesse est la richesse de l\'ame — Unanimement reconnu',action:'Consacrez du temps aujourd\'hui a votre esprit : priez avec concentration, lisez le Coran ou reflechissez aux bienfaits d\'Allah',young:'Tu n\'es pas qu\'un corps ! Tu as un coeur qui ressent et un esprit qui aime Allah — prends soin de ton esprit comme de ton corps ✨'}
+  },
+  {
+    id:3, emoji:'👑',
+    ar:{title:'كرامة الإنسان',desc:'الإسلام يكرّم الإنسان بما هو إنسان، بغض النظر عن لونه أو عرقه أو طبقته. لا يجوز استعباد الناس أو إذلالهم. كل إنسان مكرّم لأنه خليفة الله في الأرض. الكرامة حق لكل فرد.',verse:'وَلَقَدْ كَرَّمْنَا بَنِي آدَمَ',verseRef:'الإسراء ٧٠',hadith:'الناس سواسية كأسنان المشط — رواه أحمد',action:'عامل كل شخص تقابله اليوم باحترام — بغض النظر عن مظهره أو وظيفته أو أصله',young:'كل إنسان كريم عند الله! عامل الجميع باحترام — لا تسخر من أحد ولا تنظر لأحد بازدراء 👑'},
+    en:{title:'Human Dignity',desc:'Islam honors humans as humans, regardless of color, race, or class. Enslaving or humiliating people is forbidden. Every human is honored because they are God\'s vicegerent on earth. Dignity is a right for every individual.',verse:'And We have certainly honored the children of Adam',verseRef:'Al-Isra 70',hadith:'People are equal like the teeth of a comb — Ahmad',action:'Treat every person you meet today with respect — regardless of their appearance, job, or origin',young:'Every person is honored by Allah! Treat everyone with respect — never mock anyone or look down on anyone 👑'},
+    fr:{title:'La Dignite Humaine',desc:'L\'Islam honore l\'humain en tant qu\'humain, independamment de sa couleur, race ou classe. Asservir ou humilier les gens est interdit. Chaque humain est honore car il est le vicaire de Dieu sur terre. La dignite est un droit pour chaque individu.',verse:'Et Nous avons certes honore les enfants d\'Adam',verseRef:'Al-Isra 70',hadith:'Les gens sont egaux comme les dents d\'un peigne — Ahmad',action:'Traitez chaque personne que vous rencontrez aujourd\'hui avec respect — peu importe son apparence, son travail ou son origine',young:'Chaque personne est honoree par Allah ! Traite tout le monde avec respect — ne te moque jamais de personne 👑'}
+  },
+  {
+    id:4, emoji:'⚖️',
+    ar:{title:'العدالة الاجتماعية بالطريقة الإسلامية',desc:'الإسلام يحقق العدالة الاجتماعية دون سحق الفرد. الزكاة والوقف والميراث أدوات لتوزيع الثروة. لكن الإسلام يحترم الملكية الفردية ولا يصادر أموال الناس. العدالة الحقيقية تبدأ من القلب لا من القهر.',verse:'إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ',verseRef:'النحل ٩٠',hadith:'اتقوا الظلم فإن الظلم ظلمات يوم القيامة — رواه مسلم',action:'كن عادلاً اليوم في كل تعاملاتك — مع أصدقائك وأهلك وزملائك',young:'الإسلام يحب العدل! كن عادلاً مع الجميع — لا تظلم أحداً ولا تسكت عن ظلم تراه ⚖️'},
+    en:{title:'Social Justice the Islamic Way',desc:'Islam achieves social justice without crushing the individual. Zakat, waqf, and inheritance are tools for distributing wealth. But Islam respects private property and does not confiscate people\'s money. True justice starts from the heart, not from coercion.',verse:'Indeed, Allah commands justice and excellence',verseRef:'An-Nahl 90',hadith:'Beware of injustice, for it will be darkness on the Day of Judgment — Muslim',action:'Be just today in all your dealings — with friends, family, and colleagues',young:'Islam loves justice! Be fair with everyone — never be unfair to anyone and don\'t stay silent when you see injustice ⚖️'},
+    fr:{title:'La Justice Sociale a la Maniere Islamique',desc:'L\'Islam realise la justice sociale sans ecraser l\'individu. La zakat, le waqf et l\'heritage sont des outils pour distribuer la richesse. Mais l\'Islam respecte la propriete privee et ne confisque pas l\'argent des gens. La vraie justice commence par le coeur, pas par la coercition.',verse:'Certes, Allah ordonne la justice et la bienfaisance',verseRef:'An-Nahl 90',hadith:'Gardez-vous de l\'injustice, car elle sera des tenebres le Jour du Jugement — Muslim',action:'Soyez juste aujourd\'hui dans toutes vos relations — avec vos amis, votre famille et vos collegues',young:'L\'Islam aime la justice ! Sois juste avec tout le monde — ne sois jamais injuste et ne te tais pas devant l\'injustice ⚖️'}
+  },
+  {
+    id:5, emoji:'🏡',
+    ar:{title:'الملكية الفردية المتوازنة',desc:'الإسلام يعترف بحق الملكية الفردية لكنه يقيّدها بالمسؤولية الاجتماعية. المال مال الله والإنسان مستخلف فيه. لا مصادرة ظالمة ولا جشع بلا حدود. التوازن هو المفتاح.',verse:'وَآتُوهُمْ مِنْ مَالِ اللَّهِ الَّذِي آتَاكُمْ',verseRef:'النور ٣٣',hadith:'إن لنفسك عليك حقاً ولأهلك عليك حقاً — رواه البخاري',action:'استمتع بما تملك لكن لا تنسَ حق الآخرين — تصدق أو ساعد محتاجاً اليوم',young:'يمكنك أن تملك أشياء جميلة! لكن تذكر أن تشارك مع من لا يملك — هكذا يعلمنا الإسلام 🏡'},
+    en:{title:'Balanced Private Property',desc:'Islam recognizes the right to private property but restricts it with social responsibility. Wealth belongs to God and humans are its trustees. No unjust confiscation and no greed without limits. Balance is the key.',verse:'And give them from the wealth of Allah which He has given you',verseRef:'An-Nur 33',hadith:'Your body has rights over you and your family has rights over you — Bukhari',action:'Enjoy what you own but don\'t forget the rights of others — give charity or help someone in need today',young:'You can own beautiful things! But remember to share with those who don\'t have — that is what Islam teaches 🏡'},
+    fr:{title:'La Propriete Privee Equilibree',desc:'L\'Islam reconnait le droit a la propriete privee mais le restreint par la responsabilite sociale. La richesse appartient a Dieu et les humains en sont les depositaires. Pas de confiscation injuste et pas de cupidite sans limites. L\'equilibre est la cle.',verse:'Et donnez-leur de la richesse d\'Allah qu\'Il vous a donnee',verseRef:'An-Nur 33',hadith:'Ton corps a des droits sur toi et ta famille a des droits sur toi — Bukhari',action:'Profitez de ce que vous possedez mais n\'oubliez pas les droits des autres — donnez la charite ou aidez quelqu\'un dans le besoin aujourd\'hui',young:'Tu peux posseder de belles choses ! Mais rappelle-toi de partager avec ceux qui n\'ont pas — c\'est ce que l\'Islam enseigne 🏡'}
+  },
+  {
+    id:6, emoji:'👨‍👩‍👧‍👦',
+    ar:{title:'قيم الأسرة',desc:'الأسرة هي اللبنة الأساسية للمجتمع. الإسلام يحمي الأسرة ويقوّيها. الأب والأم لهما حقوق وواجبات، والأطفال لهم حق الرعاية والتعليم. تفكيك الأسرة يؤدي لانهيار المجتمع كله.',verse:'وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا',verseRef:'الروم ٢١',hadith:'خيركم خيركم لأهله وأنا خيركم لأهلي — رواه الترمذي',action:'اهتم بأسرتك اليوم: قل لوالديك أحبكما، ساعد في البيت، واقضِ وقتاً مع إخوتك',young:'العائلة هي أجمل نعمة! قل لأمك وأبيك: أحبكما كثيراً — وساعد في البيت كل يوم 👨‍👩‍👧‍👦'},
+    en:{title:'Family Values',desc:'The family is the fundamental building block of society. Islam protects and strengthens the family. Parents have rights and duties, and children have the right to care and education. Breaking the family leads to the collapse of the entire society.',verse:'And of His signs is that He created for you from yourselves mates that you may find tranquility in them',verseRef:'Ar-Rum 21',hadith:'The best of you is the best to their family, and I am the best to my family — Tirmidhi',action:'Care for your family today: tell your parents you love them, help at home, and spend time with your siblings',young:'Family is the most beautiful blessing! Tell your mom and dad: I love you so much — and help at home every day 👨‍👩‍👧‍👦'},
+    fr:{title:'Les Valeurs Familiales',desc:'La famille est la pierre angulaire de la societe. L\'Islam protege et renforce la famille. Les parents ont des droits et des devoirs, et les enfants ont droit aux soins et a l\'education. Briser la famille mene a l\'effondrement de toute la societe.',verse:'Et parmi Ses signes, Il a cree pour vous des epouses tirees de vous-memes pour que vous trouviez la tranquillite aupres d\'elles',verseRef:'Ar-Rum 21',hadith:'Le meilleur d\'entre vous est le meilleur envers sa famille, et je suis le meilleur envers ma famille — Tirmidhi',action:'Prenez soin de votre famille aujourd\'hui : dites a vos parents que vous les aimez, aidez a la maison et passez du temps avec vos freres et soeurs',young:'La famille est la plus belle benediction ! Dis a ta maman et ton papa : je vous aime beaucoup — et aide a la maison chaque jour 👨‍👩‍👧‍👦'}
+  },
+  {
+    id:7, emoji:'🗽',
+    ar:{title:'حرية الفكر والاعتقاد',desc:'الإسلام يضمن حرية الفكر والاعتقاد. لا إكراه في الدين. المسلم يدعو بالحكمة والموعظة الحسنة لا بالقوة والإجبار. حرية التفكير تقود إلى إيمان حقيقي وعميق.',verse:'لَا إِكْرَاهَ فِي الدِّينِ قَدْ تَبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ',verseRef:'البقرة ٢٥٦',hadith:'من دعا إلى هدى كان له من الأجر مثل أجور من تبعه — رواه مسلم',action:'احترم آراء الآخرين حتى لو اختلفت معهم — وادعُ بالحكمة والكلمة الطيبة',young:'الإسلام يقول: فكّر بحرية! لكن فكّر بعقلك وقلبك معاً — واحترم أفكار الآخرين 🗽'},
+    en:{title:'Freedom of Thought and Belief',desc:'Islam guarantees freedom of thought and belief. There is no compulsion in religion. A Muslim invites with wisdom and good counsel, not with force and coercion. Freedom of thinking leads to genuine and deep faith.',verse:'There shall be no compulsion in religion — the right course has become clear from the wrong',verseRef:'Al-Baqarah 256',hadith:'Whoever calls to guidance will have a reward like those who follow them — Muslim',action:'Respect others\' opinions even if you disagree — invite with wisdom and kind words',young:'Islam says: think freely! But think with your mind and your heart together — and respect others\' ideas 🗽'},
+    fr:{title:'La Liberte de Pensee et de Croyance',desc:'L\'Islam garantit la liberte de pensee et de croyance. Il n\'y a pas de contrainte en religion. Le musulman invite avec sagesse et bon conseil, pas avec force et coercition. La liberte de penser mene a une foi veritable et profonde.',verse:'Nulle contrainte en religion — le bon chemin s\'est distingue de l\'egarement',verseRef:'Al-Baqarah 256',hadith:'Quiconque appelle a la guidance aura une recompense comme celle de ceux qui le suivent — Muslim',action:'Respectez les opinions des autres meme si vous n\'etes pas d\'accord — invitez avec sagesse et bonnes paroles',young:'L\'Islam dit : pense librement ! Mais pense avec ton esprit et ton coeur ensemble — et respecte les idees des autres 🗽'}
+  },
+  {
+    id:8, emoji:'🙏',
+    ar:{title:'الأخلاق تحتاج إلى الله',desc:'بدون الإيمان بالله تصبح الأخلاق نسبية وتفقد أساسها. من يؤمن بالله يعلم أنه مراقَب فيحسن السلوك حتى في الخلوة. الأخلاق بلا دين كبناء بلا أساس — ينهار عند أول اختبار حقيقي.',verse:'إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ وَإِيتَاءِ ذِي الْقُرْبَى',verseRef:'النحل ٩٠',hadith:'الإحسان أن تعبد الله كأنك تراه فإن لم تكن تراه فإنه يراك — متفق عليه',action:'تصرف اليوم بأخلاق حسنة حتى لو لم يرك أحد — لأن الله يراك دائماً',young:'كن صادقاً وأميناً حتى لو لم يرك أحد! الله يراك دائماً ويحب الأخلاق الحسنة 🙏'},
+    en:{title:'Morality Needs God',desc:'Without faith in God, morality becomes relative and loses its foundation. One who believes in God knows they are watched, so they behave well even in private. Morality without religion is like a building without a foundation — it collapses at the first real test.',verse:'Indeed, Allah commands justice, excellence, and giving to relatives',verseRef:'An-Nahl 90',hadith:'Excellence is to worship Allah as though you see Him, for if you do not see Him, He sees you — Agreed upon',action:'Act with good morals today even if no one sees you — because Allah always sees you',young:'Be honest and trustworthy even if no one sees you! Allah always sees you and loves good character 🙏'},
+    fr:{title:'La Moralite a Besoin de Dieu',desc:'Sans la foi en Dieu, la moralite devient relative et perd son fondement. Celui qui croit en Dieu sait qu\'il est observe, alors il se comporte bien meme en prive. La moralite sans religion est comme un batiment sans fondation — il s\'effondre au premier vrai test.',verse:'Certes, Allah ordonne la justice, la bienfaisance et la generosite envers les proches',verseRef:'An-Nahl 90',hadith:'L\'excellence est d\'adorer Allah comme si tu Le voyais, car si tu ne Le vois pas, Lui te voit — Unanimement reconnu',action:'Agissez avec de bonnes moeurs aujourd\'hui meme si personne ne vous voit — car Allah vous voit toujours',young:'Sois honnete et digne de confiance meme si personne ne te voit ! Allah te voit toujours et aime le bon caractere 🙏'}
+  },
+  {
+    id:9, emoji:'📚',
+    ar:{title:'دروس سقوط الأنظمة الظالمة',desc:'التاريخ يشهد أن كل نظام قام على الظلم والقهر سقط في النهاية. الأنظمة التي حاربت الدين وسحقت الحريات انهارت من الداخل. القوة وحدها لا تبني حضارة. العدل والإيمان هما أساس البقاء.',verse:'فَتِلْكَ بُيُوتُهُمْ خَاوِيَةً بِمَا ظَلَمُوا',verseRef:'النمل ٥٢',hadith:'إن الله ليُملي للظالم حتى إذا أخذه لم يفلته — متفق عليه',action:'تعلم من التاريخ: الظلم لا يدوم — كن دائماً في صف الحق والعدل',young:'الظلم لا يستمر أبداً! التاريخ يعلمنا أن العدل ينتصر دائماً في النهاية 📚'},
+    en:{title:'Lessons from the Fall of Oppressive Systems',desc:'History testifies that every system built on injustice and oppression eventually fell. Systems that fought religion and crushed freedoms collapsed from within. Power alone does not build civilization. Justice and faith are the foundations of survival.',verse:'So those are their houses fallen into ruin because they wronged',verseRef:'An-Naml 52',hadith:'Indeed, Allah gives respite to the oppressor, but when He seizes them, He does not let them escape — Agreed upon',action:'Learn from history: injustice does not last — always stand on the side of truth and justice',young:'Injustice never lasts! History teaches us that justice always wins in the end 📚'},
+    fr:{title:'Lecons de la Chute des Systemes Oppressifs',desc:'L\'histoire temoigne que tout systeme bati sur l\'injustice et l\'oppression a fini par tomber. Les systemes qui ont combattu la religion et ecrase les libertes se sont effondres de l\'interieur. La force seule ne construit pas une civilisation. La justice et la foi sont les fondements de la survie.',verse:'Voila donc leurs maisons tombees en ruines parce qu\'ils ont ete injustes',verseRef:'An-Naml 52',hadith:'Certes, Allah accorde un repit a l\'oppresseur, mais quand Il le saisit, Il ne le laisse pas echapper — Unanimement reconnu',action:'Apprenez de l\'histoire : l\'injustice ne dure pas — soyez toujours du cote de la verite et de la justice',young:'L\'injustice ne dure jamais ! L\'histoire nous enseigne que la justice gagne toujours a la fin 📚'}
+  },
+  {
+    id:10, emoji:'🌿',
+    ar:{title:'الطريق الوسط للإسلام',desc:'الإسلام طريق وسط بين التطرف المادي والتطرف الروحي. لا رهبانية تقتل الحياة ولا مادية تقتل الروح. الإسلام يجمع بين الدنيا والآخرة، بين الفرد والمجتمع، بين الحرية والمسؤولية.',verse:'وَكَذَلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا',verseRef:'البقرة ١٤٣',hadith:'يسروا ولا تعسروا وبشروا ولا تنفروا — متفق عليه',action:'طبّق الوسطية اليوم: وازن بين دراستك ولعبك، بين عبادتك وراحتك',young:'الإسلام يحب التوازن! ادرس واعبد الله والعب وارتح — كل شيء بتوازن جميل 🌿'},
+    en:{title:'Islam\'s Middle Path',desc:'Islam is a middle path between material extremism and spiritual extremism. No monasticism that kills life, and no materialism that kills the spirit. Islam combines this world and the hereafter, the individual and society, freedom and responsibility.',verse:'And thus We have made you a middle nation',verseRef:'Al-Baqarah 143',hadith:'Make things easy and do not make them difficult, give glad tidings and do not repel — Agreed upon',action:'Apply moderation today: balance studying and playing, worship and rest',young:'Islam loves balance! Study, worship Allah, play, and rest — everything in beautiful balance 🌿'},
+    fr:{title:'La Voie du Milieu de l\'Islam',desc:'L\'Islam est une voie du milieu entre l\'extremisme materiel et l\'extremisme spirituel. Pas de monachisme qui tue la vie, et pas de materialisme qui tue l\'esprit. L\'Islam combine ce monde et l\'au-dela, l\'individu et la societe, la liberte et la responsabilite.',verse:'Et ainsi Nous avons fait de vous une communaute du juste milieu',verseRef:'Al-Baqarah 143',hadith:'Facilitez et ne compliquez pas, annoncez de bonnes nouvelles et ne repoussez pas — Unanimement reconnu',action:'Appliquez la moderation aujourd\'hui : equilibrez etude et jeu, adoration et repos',young:'L\'Islam aime l\'equilibre ! Etudie, adore Allah, joue et repose-toi — tout en bel equilibre 🌿'}
+  },
+  {
+    id:11, emoji:'🔨',
+    ar:{title:'كرامة العمل',desc:'العمل في الإسلام شرف وعبادة. كل عامل يؤدي عمله بإتقان يكون في عبادة. الإسلام يرفض استغلال العامل ويضمن حقه في أجر عادل. النبي ﷺ عمل بيديه وأكل من كسب يده.',verse:'وَقُلِ اعْمَلُوا فَسَيَرَى اللَّهُ عَمَلَكُمْ',verseRef:'التوبة ١٠٥',hadith:'أعطوا الأجير أجره قبل أن يجف عرقه — رواه ابن ماجه',action:'أتقن عملك اليوم واحترم كل عامل تقابله — فالعمل شرف مهما كان نوعه',young:'كل عمل شريف! احترم كل العاملين — المعلم والطبيب والعامل وعامل النظافة 🔨'},
+    en:{title:'Dignity of Work',desc:'Work in Islam is honor and worship. Every worker who does their job with excellence is in worship. Islam rejects exploiting workers and guarantees their right to fair wages. The Prophet (PBUH) worked with his hands and ate from his own earnings.',verse:'And say: Work, for Allah will see your work',verseRef:'At-Tawbah 105',hadith:'Give the worker their wages before their sweat dries — Ibn Majah',action:'Perfect your work today and respect every worker you meet — work is honor regardless of its type',young:'Every job is honorable! Respect all workers — teachers, doctors, builders, and cleaners 🔨'},
+    fr:{title:'La Dignite du Travail',desc:'Le travail en Islam est un honneur et une adoration. Chaque travailleur qui fait son travail avec excellence est en adoration. L\'Islam rejette l\'exploitation des travailleurs et garantit leur droit a un salaire equitable. Le Prophete (PSL) a travaille de ses mains et a mange de ses propres gains.',verse:'Et dis : Oeuvrez, car Allah verra votre oeuvre',verseRef:'At-Tawbah 105',hadith:'Donnez au travailleur son salaire avant que sa sueur ne seche — Ibn Majah',action:'Perfectionnez votre travail aujourd\'hui et respectez chaque travailleur que vous rencontrez — le travail est un honneur quel qu\'il soit',young:'Chaque travail est honorable ! Respecte tous les travailleurs — enseignants, medecins, ouvriers et agents de nettoyage 🔨'}
+  },
+  {
+    id:12, emoji:'🎓',
+    ar:{title:'غاية التعليم',desc:'التعليم في الإسلام ليس فقط لكسب المال بل لبناء الإنسان الصالح. طلب العلم فريضة على كل مسلم. الغاية هي معرفة الله وخدمة الخلق. التعليم سلاح ضد الجهل والتخلف والانحراف.',verse:'قُلْ هَلْ يَسْتَوِي الَّذِينَ يَعْلَمُونَ وَالَّذِينَ لَا يَعْلَمُونَ',verseRef:'الزمر ٩',hadith:'من سلك طريقاً يلتمس فيه علماً سهل الله له طريقاً إلى الجنة — رواه مسلم',action:'تعلم شيئاً جديداً مفيداً اليوم — ليس فقط للامتحان بل لبناء نفسك',young:'التعلم مغامرة رائعة! تعلم شيئاً جديداً كل يوم — اقرأ كتاباً أو اكتشف معلومة 🎓'},
+    en:{title:'The Purpose of Education',desc:'Education in Islam is not just for earning money but for building a righteous person. Seeking knowledge is an obligation upon every Muslim. The goal is knowing God and serving creation. Education is a weapon against ignorance, backwardness, and deviation.',verse:'Say: Are those who know equal to those who do not know?',verseRef:'Az-Zumar 9',hadith:'Whoever follows a path seeking knowledge, Allah will make easy for them a path to Paradise — Muslim',action:'Learn something new and useful today — not just for exams but for building yourself',young:'Learning is an amazing adventure! Learn something new every day — read a book or discover new information 🎓'},
+    fr:{title:'Le But de l\'Education',desc:'L\'education en Islam n\'est pas seulement pour gagner de l\'argent mais pour construire une personne vertueuse. Chercher le savoir est une obligation pour chaque musulman. Le but est de connaitre Dieu et de servir la creation. L\'education est une arme contre l\'ignorance, le retard et la deviation.',verse:'Dis : Sont-ils egaux, ceux qui savent et ceux qui ne savent pas ?',verseRef:'Az-Zumar 9',hadith:'Quiconque emprunte un chemin a la recherche du savoir, Allah lui facilitera un chemin vers le Paradis — Muslim',action:'Apprenez quelque chose de nouveau et utile aujourd\'hui — pas seulement pour les examens mais pour vous construire',young:'Apprendre est une aventure incroyable ! Apprends quelque chose de nouveau chaque jour — lis un livre ou decouvre une nouvelle information 🎓'}
+  },
+  {
+    id:13, emoji:'🕊️',
+    ar:{title:'العنف ليس الحل',desc:'الإسلام يرفض العنف كأداة لنشر الأفكار. الحوار والإقناع هما الطريق الصحيح. القوة لا تغيّر القلوب بل تولّد الحقد. الإسلام انتشر بالأخلاق والعدل لا بالسيف كما يزعم البعض.',verse:'ادْعُ إِلَى سَبِيلِ رَبِّكَ بِالْحِكْمَةِ وَالْمَوْعِظَةِ الْحَسَنَةِ',verseRef:'النحل ١٢٥',hadith:'إن الرفق لا يكون في شيء إلا زانه ولا يُنزع من شيء إلا شانه — رواه مسلم',action:'استخدم الحوار والكلمة الطيبة اليوم بدلاً من العنف أو الصراخ',young:'الكلمة الطيبة أقوى من الصراخ! إذا اختلفت مع أحد، تحدث بهدوء واحترام 🕊️'},
+    en:{title:'Violence Is Not the Solution',desc:'Islam rejects violence as a tool for spreading ideas. Dialogue and persuasion are the correct path. Force does not change hearts; it breeds hatred. Islam spread through good character and justice, not by the sword as some claim.',verse:'Invite to the way of your Lord with wisdom and good instruction',verseRef:'An-Nahl 125',hadith:'Gentleness is not found in anything except that it beautifies it, and it is not removed from anything except that it disfigures it — Muslim',action:'Use dialogue and kind words today instead of violence or shouting',young:'Kind words are stronger than shouting! If you disagree with someone, talk calmly and respectfully 🕊️'},
+    fr:{title:'La Violence N\'est Pas la Solution',desc:'L\'Islam rejette la violence comme outil pour repandre les idees. Le dialogue et la persuasion sont le bon chemin. La force ne change pas les coeurs ; elle engendre la haine. L\'Islam s\'est repandu par le bon caractere et la justice, pas par l\'epee comme certains le pretendent.',verse:'Invite au chemin de ton Seigneur par la sagesse et la bonne exhortation',verseRef:'An-Nahl 125',hadith:'La douceur ne se trouve en rien sans l\'embellir, et n\'est retiree de rien sans l\'enlaidir — Muslim',action:'Utilisez le dialogue et les bonnes paroles aujourd\'hui au lieu de la violence ou des cris',young:'Les bonnes paroles sont plus fortes que les cris ! Si tu n\'es pas d\'accord avec quelqu\'un, parle calmement et respectueusement 🕊️'}
+  },
+  {
+    id:14, emoji:'🌐',
+    ar:{title:'الأخوة الإنسانية الإسلامية',desc:'الإسلام دين عالمي لا عنصري. يجمع بين شعوب مختلفة بلا تفرقة. لا فضل لعربي على أعجمي إلا بالتقوى. الإسلام يبني أخوة حقيقية تتجاوز الحدود والألوان والأعراق.',verse:'يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُمْ مِنْ ذَكَرٍ وَأُنْثَى وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا',verseRef:'الحجرات ١٣',hadith:'لا فضل لعربي على أعجمي إلا بالتقوى — رواه أحمد',action:'تعرف اليوم على شخص من ثقافة مختلفة واحترم اختلافه — التنوع نعمة',young:'الناس كلهم إخوة! لا تفرّق بين أحد بسبب لونه أو لغته — الجميع سواسية عند الله 🌐'},
+    en:{title:'Islamic International Brotherhood',desc:'Islam is a universal, not racist, religion. It unites different peoples without discrimination. There is no superiority of an Arab over a non-Arab except through piety. Islam builds real brotherhood that transcends borders, colors, and races.',verse:'O mankind, We created you from male and female and made you peoples and tribes that you may know one another',verseRef:'Al-Hujurat 13',hadith:'There is no superiority of an Arab over a non-Arab except through piety — Ahmad',action:'Get to know someone from a different culture today and respect their differences — diversity is a blessing',young:'All people are brothers and sisters! Don\'t treat anyone differently because of their color or language — everyone is equal before Allah 🌐'},
+    fr:{title:'La Fraternite Internationale Islamique',desc:'L\'Islam est une religion universelle, pas raciste. Il unit des peuples differents sans discrimination. Il n\'y a pas de superiorite d\'un Arabe sur un non-Arabe sauf par la piete. L\'Islam construit une fraternite reelle qui transcende les frontieres, les couleurs et les races.',verse:'O humanite, Nous vous avons crees d\'un male et d\'une femelle et Nous avons fait de vous des peuples et des tribus pour que vous vous connaissiez',verseRef:'Al-Hujurat 13',hadith:'Il n\'y a pas de superiorite d\'un Arabe sur un non-Arabe sauf par la piete — Ahmad',action:'Faites connaissance avec quelqu\'un d\'une culture differente aujourd\'hui et respectez ses differences — la diversite est une benediction',young:'Tous les gens sont freres et soeurs ! Ne traite personne differemment a cause de sa couleur ou de sa langue — tout le monde est egal devant Allah 🌐'}
+  },
+  {
+    id:15, emoji:'🌟',
+    ar:{title:'المستقبل للإيمان',desc:'التاريخ أثبت أن الإيمان أقوى من كل الأنظمة المادية. الشعوب تعود إلى الله حين تجرّب بدائل فاشلة. المستقبل للإسلام لأنه يلبي حاجات الإنسان الحقيقية: الجسد والروح والعقل معاً.',verse:'هُوَ الَّذِي أَرْسَلَ رَسُولَهُ بِالْهُدَى وَدِينِ الْحَقِّ لِيُظْهِرَهُ عَلَى الدِّينِ كُلِّهِ',verseRef:'التوبة ٣٣',hadith:'لا تزال طائفة من أمتي ظاهرين على الحق — رواه مسلم',action:'كن واثقاً من دينك وقيمك — وادعُ إليه بالحكمة والقدوة الحسنة',young:'الإيمان بالله أقوى شيء! كن فخوراً بدينك وأخلاقك — المستقبل للمؤمنين الصادقين 🌟'},
+    en:{title:'The Future Belongs to Faith',desc:'History has proven that faith is stronger than all material systems. Peoples return to God when they experience failed alternatives. The future belongs to Islam because it fulfills humanity\'s real needs: body, spirit, and mind together.',verse:'It is He who sent His Messenger with guidance and the religion of truth to manifest it over all religion',verseRef:'At-Tawbah 33',hadith:'There will always remain a group from my nation apparent upon the truth — Muslim',action:'Be confident in your religion and values — invite to it with wisdom and good example',young:'Faith in Allah is the strongest thing! Be proud of your religion and morals — the future belongs to sincere believers 🌟'},
+    fr:{title:'L\'Avenir Appartient a la Foi',desc:'L\'histoire a prouve que la foi est plus forte que tous les systemes materiels. Les peuples reviennent a Dieu quand ils experimentent des alternatives echouees. L\'avenir appartient a l\'Islam car il repond aux vrais besoins de l\'humanite : corps, esprit et intelligence ensemble.',verse:'C\'est Lui qui a envoye Son Messager avec la guidee et la religion de verite pour la faire prevaloir sur toute religion',verseRef:'At-Tawbah 33',hadith:'Il y aura toujours un groupe de ma communaute apparent sur la verite — Muslim',action:'Soyez confiant dans votre religion et vos valeurs — invitez-y avec sagesse et bon exemple',young:'La foi en Allah est la chose la plus forte ! Sois fier de ta religion et de tes valeurs morales — l\'avenir appartient aux croyants sinceres 🌟'}
+  }
 ];
 
-// ═══════════════ CONTRASTS DATA ═══════════════
-const CONTRASTS = [
-  {emoji:'🌍', ar:{topic:'نظرة للإنسان',islam:'خليفة الله في الأرض — له روح وعقل وكرامة',material:'آلة اقتصادية — مجرد مادة تتفاعل'}, en:{topic:'View of Humans',islam:'God\'s vicegerent on earth — with spirit, intellect, and dignity',material:'Economic machine — just matter interacting'}, fr:{topic:'Vision de l\'Homme',islam:'Vicaire de Dieu sur terre — avec esprit, intellect et dignite',material:'Machine economique — juste de la matiere en interaction'}},
-  {emoji:'💰', ar:{topic:'الملكية',islam:'حق مشروع مقيّد بالعدل والزكاة',material:'إلغاء الملكية الخاصة — كل شيء للدولة'}, en:{topic:'Property',islam:'Legitimate right bounded by justice and zakat',material:'Abolish private property — everything belongs to the state'}, fr:{topic:'La Propriete',islam:'Droit legitime limite par la justice et la zakat',material:'Abolir la propriete privee — tout appartient a l\'Etat'}},
-  {emoji:'🕊️', ar:{topic:'الحرية',islam:'حق إلهي — حرية العقيدة والرأي مكفولة',material:'قمع المعارضة — فكر واحد مفروض'}, en:{topic:'Freedom',islam:'Divine right — freedom of belief and opinion guaranteed',material:'Suppress dissent — one imposed ideology'}, fr:{topic:'La Liberte',islam:'Droit divin — liberte de croyance et d\'opinion garantie',material:'Supprimer la dissidence — une seule ideologie imposee'}},
-  {emoji:'📖', ar:{topic:'الأخلاق',islam:'ثابتة مبنية على الوحي الإلهي',material:'نسبية تتغير حسب المصلحة الطبقية'}, en:{topic:'Morality',islam:'Fixed, based on divine revelation',material:'Relative, changing with class interests'}, fr:{topic:'La Morale',islam:'Fixe, basee sur la revelation divine',material:'Relative, changeant selon les interets de classe'}},
-  {emoji:'👨‍👩‍👧‍👦', ar:{topic:'الأسرة',islam:'نواة المجتمع — محمية ومقدسة',material:'عائق للتقدم — يجب تفكيكها'}, en:{topic:'Family',islam:'Nucleus of society — protected and sacred',material:'Obstacle to progress — must be dismantled'}, fr:{topic:'La Famille',islam:'Noyau de la societe — protegee et sacree',material:'Obstacle au progres — a demanteler'}}
-];
-
-// ═══════════════ HABITS DATA ═══════════════
-const HABITS = [
-  {emoji:'📖',ar:{label:'قراءة آية عن الإيمان والتأمل فيها',source:'العلم والإيمان'},en:{label:'Read a verse about faith and reflect on it',source:'Knowledge and faith'},fr:{label:'Lire un verset sur la foi et y reflechir',source:'Savoir et foi'}},
-  {emoji:'🧠',ar:{label:'تعلّم حجة جديدة تدحض شبهة',source:'مواجهة الشبهات'},en:{label:'Learn a new argument against a doubt',source:'Confronting doubts'},fr:{label:'Apprendre un nouvel argument contre un doute',source:'Confronter les doutes'}},
-  {emoji:'🤲',ar:{label:'الدعاء بالهداية والثبات',source:'الروحانية'},en:{label:'Pray for guidance and steadfastness',source:'Spirituality'},fr:{label:'Prier pour la guidance et la constance',source:'Spiritualite'}},
-  {emoji:'💎',ar:{label:'تأمل في نعمة من نعم الله',source:'مقابل المادية'},en:{label:'Reflect on a blessing from God',source:'Against materialism'},fr:{label:'Reflechir a une benediction de Dieu',source:'Contre le materialisme'}},
-  {emoji:'📚',ar:{label:'قراءة صفحة من كتاب إسلامي',source:'طلب العلم'},en:{label:'Read a page from an Islamic book',source:'Seeking knowledge'},fr:{label:'Lire une page d\'un livre islamique',source:'Quete du savoir'}},
-  {emoji:'🤝',ar:{label:'مساعدة شخص محتاج',source:'العدالة الاجتماعية'},en:{label:'Help someone in need',source:'Social justice'},fr:{label:'Aider une personne dans le besoin',source:'Justice sociale'}},
-  {emoji:'🌙',ar:{label:'محاسبة النفس قبل النوم',source:'التزكية'},en:{label:'Self-review before sleep',source:'Self-purification'},fr:{label:'Auto-examen avant le sommeil',source:'Purification de soi'}}
-];
-
-// ═══════════════ QUIZ DATA ═══════════════
+// ═══════════════ QUIZ DATA (Who Wants to Be a Scholar?) ═══════════════
 const QUIZ = [
-  {ar:'هل تعرف أن الإسلام سبق الشيوعية في العدالة الاجتماعية؟',en:'Do you know Islam preceded communism in social justice?',fr:'Savez-vous que l\'Islam a precede le communisme en justice sociale ?'},
-  {ar:'هل تعتقد أن العلم يتعارض مع الإيمان؟',en:'Do you believe science conflicts with faith?',fr:'Croyez-vous que la science est en conflit avec la foi ?'},
-  {ar:'هل تؤمن بأن للإنسان بُعداً روحياً لا تملؤه المادة؟',en:'Do you believe humans have a spiritual dimension that matter cannot fill?',fr:'Croyez-vous que l\'homme a une dimension spirituelle que la matiere ne peut combler ?'},
-  {ar:'هل تقبل فكرة أن الأخلاق نسبية تتغير حسب الظروف؟',en:'Do you accept that morality is relative and changes with circumstances?',fr:'Acceptez-vous que la morale est relative et change selon les circonstances ?'},
-  {ar:'هل تعرف لماذا سقطت الشيوعية؟',en:'Do you know why communism fell?',fr:'Savez-vous pourquoi le communisme est tombe ?'},
-  {ar:'هل تعتبر الأسرة أساس المجتمع؟',en:'Do you consider the family the foundation of society?',fr:'Considerez-vous la famille comme le fondement de la societe ?'},
-  {ar:'هل لديك إجابة واضحة عن غاية الحياة؟',en:'Do you have a clear answer about the purpose of life?',fr:'Avez-vous une reponse claire sur le but de la vie ?'},
-  {ar:'هل تستطيع التمييز بين النقد العلمي والتشكيك المغرض؟',en:'Can you distinguish between scientific criticism and biased doubt?',fr:'Pouvez-vous distinguer entre critique scientifique et doute tendancieux ?'},
-  {ar:'هل تؤمن بأن الحرية حق إلهي لكل إنسان؟',en:'Do you believe freedom is a divine right for every human?',fr:'Croyez-vous que la liberte est un droit divin pour chaque etre humain ?'},
-  {ar:'هل تعرف الفرق بين الاقتصاد الإسلامي والشيوعي؟',en:'Do you know the difference between Islamic and communist economics?',fr:'Connaissez-vous la difference entre l\'economie islamique et communiste ?'}
+  {
+    ar:{q:'أكمل الآية: "فِطْرَتَ اللَّهِ الَّتِي ... النَّاسَ عَلَيْهَا"',opts:['خلق','فطر','هدى','أنشأ'],correct:1,hint:'تتعلق بالطبيعة الأصلية للإنسان',quran:'الروم ٣٠'},
+    en:{q:'Complete the verse: "The nature of Allah upon which He ... mankind"',opts:['Created','Originated','Guided','Produced'],correct:1,hint:'It relates to the original nature of humans',quran:'Ar-Rum 30'},
+    fr:{q:'Completez le verset : « La nature d\'Allah selon laquelle Il a ... les gens »',opts:['Cree','Dispose','Guide','Produit'],correct:1,hint:'Cela concerne la nature originelle des humains',quran:'Ar-Rum 30'}
+  },
+  {
+    ar:{q:'ما الآية التي تقول "لَا إِكْرَاهَ فِي الدِّينِ"؟',opts:['البقرة ٢٥٥','البقرة ٢٥٦','آل عمران ١٠٠','النساء ١٠'],correct:1,hint:'تأتي بعد آية الكرسي مباشرة',quran:'البقرة ٢٥٦'},
+    en:{q:'Which verse says "There shall be no compulsion in religion"?',opts:['Al-Baqarah 255','Al-Baqarah 256','Al Imran 100','An-Nisa 10'],correct:1,hint:'It comes right after Ayat al-Kursi',quran:'Al-Baqarah 256'},
+    fr:{q:'Quel verset dit « Nulle contrainte en religion » ?',opts:['Al-Baqarah 255','Al-Baqarah 256','Al Imran 100','An-Nisa 10'],correct:1,hint:'Il vient juste apres Ayat al-Kursi',quran:'Al-Baqarah 256'}
+  },
+  {
+    ar:{q:'أكمل الحديث: "ليس الغنى عن كثرة العرض ولكن الغنى ..."',opts:['غنى المال','غنى العلم','غنى النفس','غنى الصحة'],correct:2,hint:'يتعلق بالقناعة الداخلية',quran:'الحجر ٢٩'},
+    en:{q:'Complete the hadith: "Richness is not in having many possessions, but richness is..."',opts:['Richness of money','Richness of knowledge','Richness of the soul','Richness of health'],correct:2,hint:'It relates to inner contentment',quran:'Al-Hijr 29'},
+    fr:{q:'Completez le hadith : « La richesse n\'est pas dans l\'abondance des biens, mais la richesse est... »',opts:['La richesse d\'argent','La richesse de savoir','La richesse de l\'ame','La richesse de sante'],correct:2,hint:'Cela concerne le contentement interieur',quran:'Al-Hijr 29'}
+  },
+  {
+    ar:{q:'أكمل الآية: "وَلَقَدْ كَرَّمْنَا ..."',opts:['المسلمين','المؤمنين','بني آدم','الأنبياء'],correct:2,hint:'تتعلق بكرامة كل البشر',quran:'الإسراء ٧٠'},
+    en:{q:'Complete the verse: "And We have certainly honored..."',opts:['The Muslims','The believers','The children of Adam','The prophets'],correct:2,hint:'It relates to the dignity of all humans',quran:'Al-Isra 70'},
+    fr:{q:'Completez le verset : « Et Nous avons certes honore... »',opts:['Les Musulmans','Les croyants','Les enfants d\'Adam','Les prophetes'],correct:2,hint:'Cela concerne la dignite de tous les humains',quran:'Al-Isra 70'}
+  },
+  {
+    ar:{q:'ما الحديث الذي يأمر بإعطاء العامل حقه فوراً؟',opts:['أعطوه قبل الغروب','أعطوه قبل أن يجف عرقه','أعطوه في نفس اليوم','أعطوه قبل أن يسأل'],correct:1,hint:'يتعلق بسرعة الدفع',quran:'التوبة ١٠٥'},
+    en:{q:'Which hadith orders giving the worker their due immediately?',opts:['Before sunset','Before their sweat dries','On the same day','Before they ask'],correct:1,hint:'It relates to speed of payment',quran:'At-Tawbah 105'},
+    fr:{q:'Quel hadith ordonne de donner au travailleur son du immediatement ?',opts:['Avant le coucher du soleil','Avant que sa sueur ne seche','Le meme jour','Avant qu\'il ne demande'],correct:1,hint:'Cela concerne la rapidite du paiement',quran:'At-Tawbah 105'}
+  },
+  {
+    ar:{q:'ما معنى "أمة وسطاً" في سورة البقرة؟',opts:['أمة كبيرة','أمة معتدلة','أمة قوية','أمة عالمة'],correct:1,hint:'تصف منهج الإسلام الوسطي',quran:'البقرة ١٤٣'},
+    en:{q:'What does "a middle nation" mean in Surah Al-Baqarah?',opts:['A great nation','A moderate nation','A powerful nation','A learned nation'],correct:1,hint:'It describes Islam\'s moderate approach',quran:'Al-Baqarah 143'},
+    fr:{q:'Que signifie « une communaute du juste milieu » dans la Sourate Al-Baqarah ?',opts:['Une grande communaute','Une communaute moderee','Une communaute puissante','Une communaute savante'],correct:1,hint:'Cela decrit l\'approche moderee de l\'Islam',quran:'Al-Baqarah 143'}
+  },
+  {
+    ar:{q:'أكمل الحديث: "كل مولود يُولد على ..."',opts:['الإسلام','الإيمان','الفطرة','الخير'],correct:2,hint:'الطبيعة الأصلية للإنسان',quran:'الروم ٣٠'},
+    en:{q:'Complete the hadith: "Every child is born upon..."',opts:['Islam','Faith','Fitrah (natural instinct)','Goodness'],correct:2,hint:'The original nature of a human',quran:'Ar-Rum 30'},
+    fr:{q:'Completez le hadith : « Chaque enfant nait sur... »',opts:['L\'Islam','La Foi','La Fitrah (instinct naturel)','Le Bien'],correct:2,hint:'La nature originelle d\'un humain',quran:'Ar-Rum 30'}
+  },
+  {
+    ar:{q:'ما الآية التي تأمر بالدعوة بالحكمة والموعظة الحسنة؟',opts:['البقرة ٢٥٦','النحل ١٢٥','آل عمران ١٠٤','الحجرات ١٣'],correct:1,hint:'في سورة النحل',quran:'النحل ١٢٥'},
+    en:{q:'Which verse commands inviting with wisdom and good instruction?',opts:['Al-Baqarah 256','An-Nahl 125','Al Imran 104','Al-Hujurat 13'],correct:1,hint:'In Surah An-Nahl',quran:'An-Nahl 125'},
+    fr:{q:'Quel verset commande d\'inviter avec sagesse et bonne exhortation ?',opts:['Al-Baqarah 256','An-Nahl 125','Al Imran 104','Al-Hujurat 13'],correct:1,hint:'Dans la Sourate An-Nahl',quran:'An-Nahl 125'}
+  },
+  {
+    ar:{q:'أكمل الحديث: "لا فضل لعربي على أعجمي إلا ب..."',opts:['العلم','المال','التقوى','النسب'],correct:2,hint:'المعيار الحقيقي للتفاضل',quran:'الحجرات ١٣'},
+    en:{q:'Complete the hadith: "No Arab has superiority over a non-Arab except through..."',opts:['Knowledge','Wealth','Piety','Lineage'],correct:2,hint:'The true standard of merit',quran:'Al-Hujurat 13'},
+    fr:{q:'Completez le hadith : « Pas de superiorite d\'un Arabe sur un non-Arabe sauf par... »',opts:['Le savoir','La richesse','La piete','La lignee'],correct:2,hint:'Le vrai critere de merite',quran:'Al-Hujurat 13'}
+  },
+  {
+    ar:{q:'ما وصية القرآن في أسلوب الدعوة؟',opts:['بالقوة والسيطرة','بالمال والهدايا','بالحكمة والموعظة الحسنة','بالتخويف والترهيب'],correct:2,hint:'أسلوب راقٍ في التعامل',quran:'النحل ١٢٥'},
+    en:{q:'What does the Quran recommend as the method of invitation?',opts:['Force and control','Money and gifts','Wisdom and good instruction','Threats and intimidation'],correct:2,hint:'A refined approach in dealing with others',quran:'An-Nahl 125'},
+    fr:{q:'Que recommande le Coran comme methode d\'invitation ?',opts:['Force et controle','Argent et cadeaux','Sagesse et bonne exhortation','Menaces et intimidation'],correct:2,hint:'Une approche raffinee dans les relations',quran:'An-Nahl 125'}
+  }
 ];
 
 // ═══════════════ DUAS DATA ═══════════════
 const DUAS = [
-  {ar:{label:'دعاء الهداية',text:'اللَّهُمَّ اهْدِنِي وَسَدِّدْنِي',tr:'اللهم اهدني وسددني'},en:{label:'Dua for Guidance',text:'اللَّهُمَّ اهْدِنِي وَسَدِّدْنِي',tr:'O God, guide me and keep me right'},fr:{label:'Dua pour la Guidance',text:'اللَّهُمَّ اهْدِنِي وَسَدِّدْنِي',tr:'O Dieu, guide-moi et maintiens-moi'}},
-  {ar:{label:'دعاء الثبات',text:'يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ',tr:'يا مقلب القلوب ثبت قلبي على دينك'},en:{label:'Dua for Steadfastness',text:'يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ',tr:'O Turner of hearts, make my heart firm on Your religion'},fr:{label:'Dua pour la Constance',text:'يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ',tr:'O Celui qui retourne les coeurs, affermis mon coeur sur Ta religion'}},
-  {ar:{label:'دعاء العلم',text:'رَبِّ زِدْنِي عِلْمًا',tr:'رب زدني علماً'},en:{label:'Dua for Knowledge',text:'رَبِّ زِدْنِي عِلْمًا',tr:'My Lord, increase me in knowledge'},fr:{label:'Dua pour le Savoir',text:'رَبِّ زِدْنِي عِلْمًا',tr:'Mon Seigneur, augmente-moi en science'}},
-  {ar:{label:'دعاء الحق',text:'رَبِّ أَرِنِي الْحَقَّ حَقًّا وَارْزُقْنِي اتِّبَاعَهُ',tr:'رب أرني الحق حقاً وارزقني اتباعه'},en:{label:'Dua for Truth',text:'رَبِّ أَرِنِي الْحَقَّ حَقًّا وَارْزُقْنِي اتِّبَاعَهُ',tr:'Lord, show me truth as truth and grant me to follow it'},fr:{label:'Dua pour la Verite',text:'رَبِّ أَرِنِي الْحَقَّ حَقًّا وَارْزُقْنِي اتِّبَاعَهُ',tr:'Seigneur, montre-moi la verite et accorde-moi de la suivre'}},
-  {ar:{label:'دعاء الصبر',text:'رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا',tr:'ربنا أفرغ علينا صبراً وثبت أقدامنا'},en:{label:'Dua for Patience',text:'رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا',tr:'Our Lord, pour upon us patience and plant firmly our feet'},fr:{label:'Dua pour la Patience',text:'رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا',tr:'Notre Seigneur, accorde-nous patience et affermis nos pas'}},
-  {ar:{label:'دعاء النصر',text:'رَبَّنَا انصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ',tr:'ربنا انصرنا على القوم الكافرين'},en:{label:'Dua for Victory',text:'رَبَّنَا انصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ',tr:'Our Lord, grant us victory over the disbelieving people'},fr:{label:'Dua pour la Victoire',text:'رَبَّنَا انصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ',tr:'Notre Seigneur, accorde-nous la victoire'}}
+  { ar:{label:'دعاء الثبات',text:'رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً',tr:'آل عمران ٨'},
+    en:{label:'Dua for Steadfastness',text:'رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً',tr:'Our Lord, let not our hearts deviate after You have guided us and grant us mercy from You — Al Imran 8'},
+    fr:{label:'Dua pour la Fermete',text:'رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً',tr:'Notre Seigneur, ne fais pas devier nos coeurs apres nous avoir guides et accorde-nous de Ta part une misericorde — Al Imran 8'} },
+  { ar:{label:'دعاء الهداية',text:'اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ',tr:'الفاتحة ٦'},
+    en:{label:'Dua for Guidance',text:'اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ',tr:'Guide us to the straight path — Al-Fatiha 6'},
+    fr:{label:'Dua pour la Guidance',text:'اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ',tr:'Guide-nous vers le droit chemin — Al-Fatiha 6'} },
+  { ar:{label:'دعاء العلم',text:'رَبِّ زِدْنِي عِلْمًا',tr:'طه ١١٤'},
+    en:{label:'Dua for Knowledge',text:'رَبِّ زِدْنِي عِلْمًا',tr:'My Lord, increase me in knowledge — Taha 114'},
+    fr:{label:'Dua pour le Savoir',text:'رَبِّ زِدْنِي عِلْمًا',tr:'Mon Seigneur, augmente-moi en savoir — Taha 114'} },
+  { ar:{label:'دعاء التوكل',text:'حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ',tr:'التوبة ١٢٩'},
+    en:{label:'Dua of Trust',text:'حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ',tr:'Allah is sufficient for me; there is no god but Him. I rely on Him and He is Lord of the Great Throne — At-Tawbah 129'},
+    fr:{label:'Dua de Confiance',text:'حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ',tr:'Allah me suffit ; il n\'y a de dieu que Lui. Je m\'en remets a Lui et Il est le Seigneur du Trone immense — At-Tawbah 129'} },
+  { ar:{label:'دعاء النصر',text:'رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ',tr:'البقرة ٢٥٠'},
+    en:{label:'Dua for Victory',text:'رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ',tr:'Our Lord, pour upon us patience and plant firmly our feet and give us victory — Al-Baqarah 250'},
+    fr:{label:'Dua pour la Victoire',text:'رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ',tr:'Notre Seigneur, deverse sur nous la patience, affermis nos pas et donne-nous la victoire — Al-Baqarah 250'} },
+  { ar:{label:'دعاء حسن الخاتمة',text:'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ',tr:'البقرة ٢٠١'},
+    en:{label:'Dua for a Good End',text:'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ',tr:'Our Lord, give us good in this world and good in the Hereafter, and protect us from the Fire — Al-Baqarah 201'},
+    fr:{label:'Dua pour une Bonne Fin',text:'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ',tr:'Notre Seigneur, donne-nous du bien dans ce monde et du bien dans l\'au-dela et protege-nous du Feu — Al-Baqarah 201'} }
 ];
 
-// ═══════════════ STATE ═══════════════
-let lang = localStorage.getItem('zahf-lang') || 'ar';
-let theme = localStorage.getItem('zahf-theme') || 'crimson';
-const themes = ['crimson','night','dawn'];
-const themeIcons = ['🔴','🌙','🌅'];
-const themeNames = {crimson:'قرمزي',night:'ليل هادئ',dawn:'فجر'};
-let currentCardIdx = -1;
+// ═══════════════ XP / BADGE SYSTEM ═══════════════
+const XP_KEY = 'zahf-xp'; const BADGES_KEY = 'zahf-badges'; const READ_KEY = 'zahf-read'; const STREAK_KEY = 'zahf-streak'; const MODE_KEY = 'zahf-mode'; const QUIZ_BEST_KEY = 'zahf-quiz-best';
 
-// ═══════════════ INIT ═══════════════
-document.addEventListener('DOMContentLoaded', () => {
-  setTheme(theme); setLang(lang); initTabs(); initSplash(); initScrollTop();
-  renderHome(); renderCards(); renderContrasts(); renderHabits(); renderQuiz(); renderAbout(); renderHelp(); renderDuas();
-  initScrollReveal(); initKeyboardNav();
-});
+const BADGE_DEFS = [
+  { id:'beginner', emoji:'🌱', xp:0, ar:'مبتدئ', en:'Beginner', fr:'Debutant' },
+  { id:'reader', emoji:'📖', xp:100, ar:'قارئ', en:'Reader', fr:'Lecteur' },
+  { id:'scholar', emoji:'🎓', xp:300, ar:'عالم', en:'Scholar', fr:'Savant' },
+  { id:'persistent', emoji:'🔥', xp:500, ar:'مثابر', en:'Persistent', fr:'Perseverant' },
+  { id:'expert', emoji:'🏆', xp:1000, ar:'خبير', en:'Expert', fr:'Expert' }
+];
 
-function initSplash() {
-  let count = 5; const el = document.getElementById('splashCount');
-  const featuresEl = document.getElementById('splashFeatures');
-  if (featuresEl) featuresEl.innerHTML = T[lang].splashFeatures.map((f, i) => `<div class="splash-feature" style="animation-delay:${0.3+i*0.3}s">${f}</div>`).join('');
-  const interval = setInterval(() => { count--; if (el) el.textContent = count; if (count <= 0) { dismissSplash(); clearInterval(interval); } }, 1000);
+function getXP() { return parseInt(localStorage.getItem(XP_KEY) || '0'); }
+function addXP(pts) { const xp = getXP() + pts; localStorage.setItem(XP_KEY, xp); checkBadges(xp); updateXPDisplay(); return xp; }
+function getLevel(xp) { if (xp >= 1000) return 5; if (xp >= 500) return 4; if (xp >= 300) return 3; if (xp >= 100) return 2; return 1; }
+function getEarnedBadges() { return JSON.parse(localStorage.getItem(BADGES_KEY) || '[]'); }
+function checkBadges(xp) { const earned = getEarnedBadges(); BADGE_DEFS.forEach(b => { if (xp >= b.xp && !earned.includes(b.id)) { earned.push(b.id); localStorage.setItem(BADGES_KEY, JSON.stringify(earned)); showToast(`${b.emoji} ${b[lang]}!`); playSound('success'); } }); }
+function getReadTraits() { return JSON.parse(localStorage.getItem(READ_KEY) || '[]'); }
+function markTraitRead(id) { const read = getReadTraits(); if (!read.includes(id)) { read.push(id); localStorage.setItem(READ_KEY, JSON.stringify(read)); addXP(10); } }
+
+// ═══════════════ STREAK ═══════════════
+function getStreak() { return JSON.parse(localStorage.getItem(STREAK_KEY) || '{"count":0,"lastDate":""}'); }
+function updateStreak() { const today = new Date().toDateString(); const s = getStreak(); if (s.lastDate === today) return s.count; const yesterday = new Date(); yesterday.setDate(yesterday.getDate()-1); if (s.lastDate === yesterday.toDateString()) { s.count++; } else if (s.lastDate !== today) { s.count = 1; } s.lastDate = today; localStorage.setItem(STREAK_KEY, JSON.stringify(s)); return s.count; }
+
+// ═══════════════ AGE MODE ═══════════════
+let ageMode = localStorage.getItem(MODE_KEY) || 'teen';
+function toggleAgeMode() { ageMode = ageMode === 'young' ? 'teen' : 'young'; localStorage.setItem(MODE_KEY, ageMode); document.body.classList.toggle('young-mode', ageMode === 'young'); renderAll(); showToast(ageMode === 'young' ? T[lang].youngMode : T[lang].teenMode); playSound('theme'); }
+
+// ═══════════════ LANGUAGE & THEME ═══════════════
+let lang = document.documentElement.lang || 'ar'; let currentTheme = document.documentElement.dataset.theme || 'nature';
+const THEMES = ['nature','night','ocean']; const THEME_ICONS = { nature:'🌿', night:'🌙', ocean:'🌊' }; let currentPrincipleIdx = -1;
+function setLang(l) { lang = l; document.documentElement.lang = l; document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr'; document.querySelectorAll('.lang-opt').forEach(b => b.classList.toggle('active', b.dataset.lang === l)); renderAll(); }
+function cycleTheme() { const idx = (THEMES.indexOf(currentTheme) + 1) % THEMES.length; currentTheme = THEMES[idx]; document.documentElement.dataset.theme = currentTheme; document.getElementById('themeIcon').textContent = THEME_ICONS[currentTheme]; playSound('theme'); }
+
+// ═══════════════ RENDER ALL ═══════════════
+function renderAll() {
+  const t = T[lang];
+  document.getElementById('appTitle').textContent = t.appTitle; document.getElementById('splashSub').textContent = t.splashSub; document.getElementById('splashHint').textContent = t.splashHint;
+  document.getElementById('tabHome').textContent = t.tabHome; document.getElementById('tabTraits').textContent = t.tabTraits; document.getElementById('tabQuiz').textContent = t.tabQuiz; document.getElementById('tabProgress').textContent = t.tabProgress; document.getElementById('tabAbout').textContent = t.tabAbout;
+  document.getElementById('traitsTitle').textContent = t.traitsTitle; document.getElementById('traitsDesc').textContent = t.traitsDesc; document.getElementById('quizTitle').textContent = t.quizTitle; document.getElementById('quizDesc').textContent = t.quizDesc;
+  document.getElementById('progressTitle').textContent = t.progressTitle; document.getElementById('progressDesc').textContent = t.progressDesc; document.getElementById('helpTitle').textContent = t.helpTitle; document.getElementById('duaPanelTitle').textContent = t.duaPanelTitle;
+  document.getElementById('ageModeBtn').textContent = ageMode === 'young' ? t.youngMode : t.teenMode;
+  renderHome(); renderTraits(); renderProgress(); renderAbout(); renderHelp(); renderDuas(); renderTicker();
 }
-function dismissSplash() { const s = document.getElementById('splash'); if (s) { s.classList.add('hidden'); setTimeout(() => s.style.display = 'none', 500); } playSound('click'); }
 
-function setLang(l) {
-  lang = l; localStorage.setItem('zahf-lang', l);
-  const isRTL = l === 'ar'; document.documentElement.lang = l; document.documentElement.dir = isRTL ? 'rtl' : 'ltr'; document.body.dir = isRTL ? 'rtl' : 'ltr';
-  document.querySelectorAll('.lang-opt').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
-  const t = T[l]; const set = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
-  set('appTitle', t.appTitle); set('splashSub', t.splashSub); set('splashHint', t.splashHint);
-  set('tabHome', t.tabHome); set('tabCards', t.tabCards); set('tabContrasts', t.tabContrasts);
-  set('tabHabits', t.tabHabits); set('tabQuiz', t.tabQuiz); set('tabAbout', t.tabAbout);
-  set('cardsTitle', t.cardsTitle); set('cardsDesc', t.cardsDesc);
-  set('contrastsTitle', t.contrastsTitle); set('contrastsDesc', t.contrastsDesc);
-  set('habitsTitle', t.habitsTitle); set('habitsDesc', t.habitsDesc);
-  set('quizTitle', t.quizTitle); set('quizDesc', t.quizDesc);
-  set('helpTitle', t.helpTitle); set('duaPanelTitle', t.duaPanelTitle); set('habitsReset', t.resetBtn);
-  renderHome(); renderCards(); renderContrasts(); renderHabits(); renderQuiz(); renderAbout(); renderHelp(); renderDuas();
-  const featuresEl = document.getElementById('splashFeatures');
-  if (featuresEl) featuresEl.innerHTML = T[l].splashFeatures.map((f, i) => `<div class="splash-feature" style="animation-delay:${0.3+i*0.3}s">${f}</div>`).join('');
-}
-
-function setTheme(t) { theme = t; document.documentElement.dataset.theme = t; localStorage.setItem('zahf-theme', t); const idx = themes.indexOf(t); const el = document.getElementById('themeIcon'); if (el) el.textContent = themeIcons[idx]; }
-function cycleTheme() { const idx = (themes.indexOf(theme) + 1) % themes.length; setTheme(themes[idx]); showToast(themeNames[themes[idx]]); playSound('theme'); }
-
-function initTabs() { document.querySelectorAll('.tab').forEach(tab => { tab.addEventListener('click', () => { document.querySelectorAll('.tab').forEach(t => t.classList.remove('active')); document.querySelectorAll('.panel').forEach(p => p.classList.remove('active')); tab.classList.add('active'); const panel = document.getElementById('panel-' + tab.dataset.tab); if (panel) panel.classList.add('active'); window.scrollTo({top:0,behavior:'smooth'}); playSound('click'); }); }); }
-
+// ═══════════════ RENDER: HOME ═══════════════
 function renderHome() {
-  const t = T[lang]; const dayIdx = new Date().getDate() % CARDS.length; const c = CARDS[dayIdx]; const cd = c[lang];
-  document.getElementById('dailyCard').innerHTML = `<div class="daily-label">${t.dailyLabel}</div><div class="daily-title">${cd.title}</div><div class="daily-body">${cd.desc}</div><div class="daily-action" onclick="document.querySelector('[data-tab=cards]').click()">${t.tabCards} &#8594;</div>`;
-  const sections = [{icon:'🔴',tab:'cards',title:t.tabCards,desc:lang==='ar'?'٢٠ بطاقة':lang==='fr'?'20 cartes':'20 cards'},{icon:'⚖️',tab:'contrasts',title:t.tabContrasts,desc:lang==='ar'?'إسلام مقابل شيوعية':lang==='fr'?'Islam vs communisme':'Islam vs communism'},{icon:'📋',tab:'habits',title:t.tabHabits,desc:lang==='ar'?'تتبع يومي':lang==='fr'?'Suivi quotidien':'Daily tracking'},{icon:'🤔',tab:'quiz',title:t.tabQuiz,desc:lang==='ar'?'اختبر نفسك':lang==='fr'?'Testez-vous':'Test yourself'},{icon:'📖',tab:'about',title:t.tabAbout,desc:lang==='ar'?'عن الكتاب':lang==='fr'?'Le livre':'The book'}];
-  document.getElementById('homeGrid').innerHTML = sections.map(s => `<div class="home-card" onclick="document.querySelector('[data-tab=${s.tab}]').click()"><span class="hc-icon">${s.icon}</span><div class="hc-title">${s.title}</div><div class="hc-desc">${s.desc}</div></div>`).join('');
+  const t = T[lang]; const dayIdx = new Date().getDate() % TRAITS.length; const trait = TRAITS[dayIdx]; const d = trait[lang];
+  document.getElementById('dailyCard').innerHTML = `<div class="daily-label">${t.dailyLabel}</div><div class="daily-title">${trait.emoji} ${d.title}</div><div class="daily-body">${ageMode === 'young' ? d.young : d.desc}</div><div class="daily-action" onclick="switchTab('traits');toggleCard('trait-${trait.id}')">${t.readMore} &#8594;</div>`;
+  document.getElementById('homeGrid').innerHTML = TRAITS.map(tr => { const dd = tr[lang]; return `<div class="home-card" onclick="switchTab('traits');toggleCard('trait-${tr.id}')"><span class="hc-icon">${tr.emoji}</span><div class="hc-title">${dd.title}</div></div>`; }).join('');
 }
 
-function renderCards() {
-  const t = T[lang]; const searchBar = `<div class="search-bar"><input type="text" id="cardsSearch" class="search-input" placeholder="${t.searchPlaceholder}" oninput="filterCards(this.value)"><span class="search-icon">🔍</span></div>`;
-  const cards = CARDS.map((c, i) => { const d = c[lang]; return `<div class="principle-card scroll-reveal" id="card-${c.id}" data-search="${d.title.toLowerCase()}"><div class="principle-head" onclick="toggleCard('card-${c.id}')"><span class="principle-num">${c.id}</span><span class="principle-emoji">${c.emoji}</span><span class="principle-title">${d.title}</span><span class="principle-chev">&#9660;</span></div><div class="principle-body"><div class="principle-inner"><p class="principle-desc">${d.desc}</p><div class="verse-box"><div class="verse-arabic">${d.verse}</div><div class="verse-ref">${d.verseRef}</div></div><div class="action-box"><span class="action-icon">💡</span><span>${d.lesson}</span></div><button class="share-btn" onclick="event.stopPropagation();shareCard(${i})"><span class="share-icon">&#128279;</span> ${t.share}</button></div></div></div>`; }).join('');
-  document.getElementById('cardsContainer').innerHTML = searchBar + cards;
+// ═══════════════ RENDER: TRAITS ═══════════════
+function renderTraits() {
+  const t = T[lang]; const readTraits = getReadTraits(); const container = document.getElementById('traitsContainer');
+  const searchHTML = `<div class="search-bar"><span class="search-icon">🔍</span><input class="search-input" id="traitsSearch" placeholder="${t.searchPlaceholder}" oninput="filterTraits(this.value)"></div>`;
+  container.innerHTML = searchHTML + TRAITS.map(tr => { const d = tr[lang]; const isRead = readTraits.includes(tr.id); return `
+    <div class="trait-card scroll-reveal ${isRead ? 'read' : ''}" id="trait-${tr.id}">
+      <div class="trait-head" onclick="toggleCard('trait-${tr.id}');markTraitRead(${tr.id})"><span class="trait-num">${tr.id}</span><span class="trait-emoji">${tr.emoji}</span><span class="trait-title">${d.title}</span>${isRead ? '<span class="trait-read-badge">&#10003;</span>' : ''}<span class="trait-chev">&#9660;</span></div>
+      <div class="trait-body"><div class="trait-inner"><div class="trait-desc">${ageMode === 'young' ? d.young : d.desc}</div><div class="verse-box"><div class="verse-arabic">${d.verse}</div><div class="verse-ref">${d.verseRef}</div></div><div class="hadith-box"><span class="hadith-label">📜 ${t.hadith}</span><div class="hadith-text">${d.hadith}</div></div><div class="action-box"><span class="action-icon">💡</span><span>${d.action}</span></div><button class="share-btn" onclick="shareTrait(${tr.id})"><span class="share-icon">📤</span> ${t.share}</button></div></div>
+    </div>`; }).join('');
 }
 
-function filterCards(query) { const q = query.toLowerCase().trim(); document.querySelectorAll('.principle-card').forEach(card => { const match = !q || (card.dataset.search || '').includes(q) || (card.querySelector('.principle-title')?.textContent.toLowerCase() || '').includes(q); card.style.display = match ? '' : 'none'; }); }
+function filterTraits(query) { const cards = document.querySelectorAll('.trait-card'); const q = query.toLowerCase(); cards.forEach(card => { const title = card.querySelector('.trait-title').textContent.toLowerCase(); const desc = card.querySelector('.trait-desc') ? card.querySelector('.trait-desc').textContent.toLowerCase() : ''; card.style.display = (!q || title.includes(q) || desc.includes(q)) ? '' : 'none'; }); }
+function shareTrait(id) { const trait = TRAITS.find(t => t.id === id); if (!trait) return; const d = trait[lang]; const text = `${trait.emoji} ${d.title}\n${d.desc}\n\n${d.verse} — ${d.verseRef}`; if (navigator.share) { navigator.share({ title: d.title, text }); } else { navigator.clipboard.writeText(text).then(() => showToast(lang==='ar'?'تم النسخ':'Copied!')); } }
 
-async function shareCard(idx) { const c = CARDS[idx]; const d = c[lang]; const text = `${c.emoji} ${d.title}\n\n${d.desc}\n\n💡 ${d.lesson}\n\n— الإسلام في وجه الزحف الأحمر`; if (navigator.share) { try { await navigator.share({title:d.title,text}); } catch(e){} } else { try { await navigator.clipboard.writeText(text); showToast(lang==='ar'?'تم النسخ!':lang==='fr'?'Copie !':'Copied!'); } catch(e){ showToast('Could not copy'); } } }
-
-function renderContrasts() {
-  const t = T[lang];
-  document.getElementById('contrastsContainer').innerHTML = CONTRASTS.map(c => {
-    const d = c[lang];
-    return `<div class="anxiety-card scroll-reveal"><div class="anxiety-header"><span class="anxiety-emoji">${c.emoji}</span><span class="anxiety-title">${d.topic}</span></div><div class="comparison-box"><div class="comparison-side ghazali-side"><div class="comp-label">${t.islamView}</div><div class="comp-text">${d.islam}</div></div><div class="comparison-side carnegie-side"><div class="comp-label">${t.materialView}</div><div class="comp-text">${d.material}</div></div></div></div>`;
-  }).join('');
+// ═══════════════ RENDER: QUIZ ═══════════════
+let quizState = { current: 0, score: 0, answers: [], lifelines: { fifty: true, hint: true, quran: true }, active: false };
+function renderQuiz() { quizState = { current: 0, score: 0, answers: [], lifelines: { fifty: true, hint: true, quran: true }, active: true }; showQuizQuestion(); }
+function showQuizQuestion() {
+  const t = T[lang]; const container = document.getElementById('quizContainer'); const result = document.getElementById('quizResult'); result.classList.add('hidden');
+  if (quizState.current >= QUIZ.length) { showQuizResult(); return; }
+  const q = QUIZ[quizState.current][lang]; const total = QUIZ.length; const num = quizState.current + 1;
+  container.innerHTML = `<div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:${num/total*100}%"></div></div><div class="quiz-counter">${num} / ${total}</div>
+    <div class="quiz-question-card scroll-reveal"><div class="quiz-q-text">${q.q}</div><div class="quiz-options" id="quizOpts">${q.opts.map((opt, i) => `<button class="quiz-opt" id="qopt-${i}" onclick="answerQuiz(${i})">${opt}</button>`).join('')}</div>
+      <div class="quiz-lifelines"><button class="lifeline-btn ${quizState.lifelines.fifty?'':'used'}" onclick="useFiftyFifty()" ${quizState.lifelines.fifty?'':'disabled'}>${t.lifeline5050}</button><button class="lifeline-btn ${quizState.lifelines.hint?'':'used'}" onclick="useHint()" ${quizState.lifelines.hint?'':'disabled'}>${t.lifelineHint}</button><button class="lifeline-btn ${quizState.lifelines.quran?'':'used'}" onclick="useQuranRef()" ${quizState.lifelines.quran?'':'disabled'}>${t.lifelineQuran}</button></div>
+      <div id="quizFeedback" class="quiz-feedback hidden"></div></div>`;
+}
+function answerQuiz(idx) { if (!quizState.active) return; const q = QUIZ[quizState.current][lang]; const correct = q.correct; const opts = document.querySelectorAll('.quiz-opt'); opts.forEach((o, i) => { o.disabled = true; if (i === correct) o.classList.add('correct'); if (i === idx && i !== correct) o.classList.add('wrong'); }); const feedback = document.getElementById('quizFeedback'); feedback.classList.remove('hidden'); if (idx === correct) { quizState.score++; addXP(5); feedback.innerHTML = `<span class="fb-correct">${T[lang].correct}</span>`; playSound('success'); } else { feedback.innerHTML = `<span class="fb-wrong">${T[lang].wrong}</span>`; playSound('click'); } quizState.answers.push(idx); quizState.current++; setTimeout(() => showQuizQuestion(), 1800); }
+function useFiftyFifty() { if (!quizState.lifelines.fifty) return; quizState.lifelines.fifty = false; const q = QUIZ[quizState.current][lang]; const correct = q.correct; const wrongIdxs = [0,1,2,3].filter(i => i !== correct); const toHide = wrongIdxs.sort(() => Math.random() - 0.5).slice(0, 2); toHide.forEach(i => { const el = document.getElementById('qopt-'+i); if(el) { el.style.visibility='hidden'; el.disabled=true; }}); document.querySelector('.lifeline-btn').classList.add('used'); playSound('click'); }
+function useHint() { if (!quizState.lifelines.hint) return; quizState.lifelines.hint = false; const q = QUIZ[quizState.current][lang]; const feedback = document.getElementById('quizFeedback'); feedback.classList.remove('hidden'); feedback.innerHTML = `<span class="fb-hint">💡 ${q.hint}</span>`; playSound('click'); }
+function useQuranRef() { if (!quizState.lifelines.quran) return; quizState.lifelines.quran = false; const q = QUIZ[quizState.current][lang]; const feedback = document.getElementById('quizFeedback'); feedback.classList.remove('hidden'); feedback.innerHTML = `<span class="fb-quran">📖 ${q.quran}</span>`; playSound('click'); }
+function showQuizResult() {
+  const t = T[lang]; const total = QUIZ.length; const pct = Math.round(quizState.score / total * 100);
+  const best = parseInt(localStorage.getItem(QUIZ_BEST_KEY) || '0'); if (pct > best) localStorage.setItem(QUIZ_BEST_KEY, pct); addXP(20);
+  let emoji, title; if (pct >= 80) { emoji = '🏆'; title = lang==='ar'?'عالم حقيقي!':lang==='fr'?'Un vrai savant !':'A True Scholar!'; } else if (pct >= 50) { emoji = '📖'; title = lang==='ar'?'جيد جداً!':lang==='fr'?'Tres bien !':'Very Good!'; } else { emoji = '🌱'; title = lang==='ar'?'واصل التعلم!':lang==='fr'?'Continue d\'apprendre !':'Keep Learning!'; }
+  document.getElementById('quizContainer').innerHTML = ''; const result = document.getElementById('quizResult'); result.classList.remove('hidden');
+  result.innerHTML = `<div class="qr-emoji">${emoji}</div><div class="qr-score">${quizState.score}/${total}</div><div class="qr-title">${title}</div><div class="qr-desc">${pct}%</div><button class="quiz-submit" onclick="renderQuiz()">${t.tryAgain}</button>`;
+  result.scrollIntoView({ behavior: 'smooth' }); if (pct >= 80) launchConfetti(); quizState.active = false;
 }
 
-function renderHabits() {
-  const today = new Date().toDateString(); let hs = JSON.parse(localStorage.getItem('zahf-habits') || '{}');
-  if (hs.date !== today) { updateStreak(hs); hs = {date:today,done:[]}; localStorage.setItem('zahf-habits', JSON.stringify(hs)); }
-  const streak = getStreak(); const streakHTML = streak > 0 ? `<div class="streak-badge">🔥 ${streak} ${T[lang].streakMsg}</div>` : '';
-  document.getElementById('habitsContainer').innerHTML = HABITS.map((h,i) => { const d=h[lang]; const isDone=hs.done.includes(i); return `<div class="habit-item ${isDone?'done':''}" onclick="toggleHabit(${i})"><span class="habit-check">${isDone?'&#10003;':''}</span><span class="habit-emoji">${h.emoji}</span><div><div class="habit-label">${d.label}</div><div class="habit-source">${d.source}</div></div></div>`; }).join('');
-  const streakEl = document.getElementById('streakBadge'); if (streakEl) streakEl.innerHTML = streakHTML; updateHabitsProgress(hs);
+// ═══════════════ RENDER: PROGRESS ═══════════════
+function renderProgress() {
+  const t = T[lang]; const xp = getXP(); const level = getLevel(xp); const streak = getStreak().count; const readTraits = getReadTraits(); const earned = getEarnedBadges(); const bestQuiz = parseInt(localStorage.getItem(QUIZ_BEST_KEY) || '0'); const nextBadge = BADGE_DEFS.find(b => !earned.includes(b.id)); const nextXP = nextBadge ? nextBadge.xp : 1000; const progressPct = Math.min(100, (xp / nextXP) * 100);
+  document.getElementById('progressContainer').innerHTML = `
+    <div class="progress-xp-card"><div class="xp-header"><span class="xp-icon">⭐</span><span class="xp-amount">${xp} ${t.xpLabel}</span></div><div class="xp-bar-wrap"><div class="xp-bar"><div class="xp-bar-fill" style="width:${progressPct}%"></div></div><span class="xp-level">${t.levelLabel} ${level}</span></div>${nextBadge ? `<div class="xp-next">${lang==='ar'?'التالي:':lang==='fr'?'Suivant:':'Next:'} ${nextBadge.emoji} ${nextBadge[lang]} (${nextBadge.xp} XP)</div>` : ''}</div>
+    ${streak > 0 ? `<div class="streak-badge">🔥 ${streak} ${t.streakMsg}</div>` : ''}
+    <div class="progress-stats"><div class="stat-card"><span class="stat-num">${readTraits.length}</span><span class="stat-label">${lang==='ar'?'قيمة مقروءة':lang==='fr'?'Valeurs lues':'Values Read'}</span><span class="stat-total">/ ${TRAITS.length}</span></div><div class="stat-card"><span class="stat-num">${bestQuiz}%</span><span class="stat-label">${lang==='ar'?'أفضل نتيجة':lang==='fr'?'Meilleur score':'Best Quiz'}</span></div><div class="stat-card"><span class="stat-num">${earned.length}</span><span class="stat-label">${lang==='ar'?'شارات':lang==='fr'?'Badges':'Badges'}</span><span class="stat-total">/ ${BADGE_DEFS.length}</span></div></div>
+    <div class="badges-section"><h3 class="badges-title">${lang==='ar'?'🏅 الشارات':lang==='fr'?'🏅 Badges':'🏅 Badges'}</h3><div class="badges-grid">${BADGE_DEFS.map(b => `<div class="badge-item ${earned.includes(b.id)?'earned':'locked'}"><span class="badge-emoji">${b.emoji}</span><span class="badge-name">${b[lang]}</span><span class="badge-xp">${b.xp} XP</span></div>`).join('')}</div></div>`;
 }
-function toggleHabit(i) { const today=new Date().toDateString(); let hs=JSON.parse(localStorage.getItem('zahf-habits')||'{}'); if(hs.date!==today)hs={date:today,done:[]}; const idx=hs.done.indexOf(i); if(idx>-1)hs.done.splice(idx,1);else hs.done.push(i); localStorage.setItem('zahf-habits',JSON.stringify(hs)); renderHabits(); playSound(idx>-1?'click':'success'); if(hs.done.length===HABITS.length){launchConfetti();showToast(T[lang].allDone);} }
-function resetHabits() { localStorage.setItem('zahf-habits',JSON.stringify({date:new Date().toDateString(),done:[]})); renderHabits(); showToast(lang==='ar'?'تم إعادة التعيين':lang==='fr'?'Reinitialise':'Reset'); }
-function updateHabitsProgress(hs) { const done=hs.done.length,total=HABITS.length,pct=total>0?(done/total*100):0; const fill=document.getElementById('habitsFill'); const txt=document.getElementById('habitsText'); if(fill)fill.style.width=pct+'%'; if(txt)txt.textContent=`${done}/${total}`; }
-function updateStreak(prev) { let sd=JSON.parse(localStorage.getItem('zahf-streak')||'{"count":0,"lastDate":""}'); if(prev&&prev.done&&prev.done.length===HABITS.length&&prev.date){const y=new Date();y.setDate(y.getDate()-1);if(prev.date===y.toDateString())sd.count++;else if(prev.date!==new Date().toDateString())sd.count=prev.done.length===HABITS.length?1:0;sd.lastDate=prev.date;}else if(prev&&prev.date){sd.count=0;sd.lastDate=prev.date;} localStorage.setItem('zahf-streak',JSON.stringify(sd)); }
-function getStreak() { return JSON.parse(localStorage.getItem('zahf-streak')||'{"count":0}').count; }
+function updateXPDisplay() { const panel = document.getElementById('panel-progress'); if (panel && panel.classList.contains('active')) renderProgress(); }
 
-function launchConfetti() { const canvas=document.getElementById('confettiCanvas'); if(!canvas)return; canvas.style.display='block'; const ctx=canvas.getContext('2d'); canvas.width=window.innerWidth;canvas.height=window.innerHeight; const particles=[]; const colors=['#C62828','#E53935','#EF5350','#EF9A9A','#FFCDD2','#B71C1C']; for(let i=0;i<120;i++){particles.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height-canvas.height,w:Math.random()*10+5,h:Math.random()*6+3,color:colors[Math.floor(Math.random()*colors.length)],vx:(Math.random()-0.5)*4,vy:Math.random()*3+2,rot:Math.random()*360,rotSpeed:(Math.random()-0.5)*10});} let frame=0; function draw(){ctx.clearRect(0,0,canvas.width,canvas.height);particles.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.rot+=p.rotSpeed;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.rot*Math.PI/180);ctx.fillStyle=p.color;ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h);ctx.restore();});frame++;if(frame<120)requestAnimationFrame(draw);else{ctx.clearRect(0,0,canvas.width,canvas.height);canvas.style.display='none';}} draw(); }
-
-function renderQuiz() {
-  const t = T[lang];
-  document.getElementById('quizContainer').innerHTML = QUIZ.map((q,i) => `<div class="quiz-question scroll-reveal" id="quiz-q-${i}"><div class="quiz-q-text">${i+1}. ${q[lang]}</div><div class="quiz-options"><button class="quiz-opt" onclick="selectQuizOpt(${i},2)">${t.yes}</button><button class="quiz-opt" onclick="selectQuizOpt(${i},1)">${t.sometimes}</button><button class="quiz-opt" onclick="selectQuizOpt(${i},0)">${t.no}</button></div></div>`).join('') + `<button class="quiz-submit" onclick="submitQuiz()">${t.submitQuiz}</button>`;
-  document.getElementById('quizResult').classList.add('hidden'); window._quizAnswers = {};
-}
-function selectQuizOpt(qi,val) { window._quizAnswers[qi]=val; document.querySelectorAll(`#quiz-q-${qi} .quiz-opt`).forEach((o,oi)=>{o.classList.toggle('selected',[2,1,0][oi]===val);}); playSound('click'); }
-function submitQuiz() {
-  const answers=window._quizAnswers||{}; if(Object.keys(answers).length<QUIZ.length){showToast(lang==='ar'?'أجب على جميع الأسئلة':lang==='fr'?'Repondez a toutes les questions':'Answer all questions');return;}
-  const invertedQs=[1,3]; let score=0; Object.entries(answers).forEach(([qi,v])=>{score+=invertedQs.includes(parseInt(qi))?(2-v):v;});
-  const max=QUIZ.length*2; const pct=Math.round(score/max*100); let emoji,title,desc;
-  if(pct>=75){emoji='⭐';title=lang==='ar'?'ممتاز!':lang==='fr'?'Excellent !':'Excellent!';desc=lang==='ar'?'لديك وعي عميق بالفرق بين الرؤية الإسلامية والمادية.':lang==='fr'?'Vous avez une conscience profonde.':'You have deep awareness.';}
-  else if(pct>=50){emoji='📖';title=lang==='ar'?'جيد':lang==='fr'?'Bien':'Good';desc=lang==='ar'?'أنت على الطريق. واصل التعلم.':lang==='fr'?'Vous etes sur la bonne voie.':'You\'re on the right track.';}
-  else{emoji='🔄';title=lang==='ar'?'حان وقت التعلم':lang==='fr'?'Il est temps d\'apprendre':'Time to Learn';desc=lang==='ar'?'راجع البطاقات وتعرف على الحجج الإسلامية.':lang==='fr'?'Relisez les cartes.':'Review the cards and learn the Islamic arguments.';}
-  const result=document.getElementById('quizResult'); result.classList.remove('hidden');
-  result.innerHTML=`<div class="qr-emoji">${emoji}</div><div class="qr-score">${pct}%</div><div class="qr-title">${title}</div><div class="qr-desc">${desc}</div><button class="quiz-submit" onclick="renderQuiz()" style="margin-top:16px">${T[lang].quizAgain}</button>`;
-  result.scrollIntoView({behavior:'smooth'}); playSound('success');
-}
-
+// ═══════════════ RENDER: ABOUT ═══════════════
 function renderAbout() {
   const about = {
-    ar:{disclaimerTitle:'⚠️ تنبيه مهم',disclaimer:'لست عالماً ولا مفتياً. هذا جهد متواضع من مسلم يحب كتب الشيخ الغزالي. ليست فتوى.',authorName:'الشيخ محمد الغزالي',authorDates:'١٩١٧ — ١٩٩٦',authorBio:'عالم ومفكر إسلامي مصري. ألّف أكثر من ٩٤ كتاباً. درس في الأزهر، ودرّس في جامعة الأمير عبد القادر بقسنطينة (الجزائر).',bookTitle:'عن الكتاب',bookDesc:'"الإسلام في وجه الزحف الأحمر" يرد فيه الشيخ الغزالي على الفكر الشيوعي المادي بحجج عقلية وقرآنية. يبيّن أن الإسلام سبق الشيوعية في العدالة الاجتماعية لكن بأسلوب يحفظ كرامة الإنسان وحريته.',sourcesTitle:'المصادر',sources:['كتاب "الإسلام في وجه الزحف الأحمر" — الشيخ محمد الغزالي','القرآن الكريم','صحيح البخاري ومسلم'],contact:'تواصل: abdelhak.bourdim@gmail.com'},
-    en:{disclaimerTitle:'⚠️ Important Notice',disclaimer:'I am not a scholar or mufti. This is a humble effort by a Muslim who loves Sheikh al-Ghazali\'s books. This is not a fatwa.',authorName:'Sheikh Mohammed al-Ghazali',authorDates:'1917 — 1996',authorBio:'Egyptian Islamic scholar and thinker. Author of 94+ books. Studied at Al-Azhar, taught at the University of Emir Abdelkader in Constantine, Algeria.',bookTitle:'About the Book',bookDesc:'"Islam Facing the Red Tide" responds to communist materialist ideology with rational and Quranic arguments. It shows that Islam preceded communism in social justice but in a way that preserves human dignity and freedom.',sourcesTitle:'Sources',sources:['"Islam Facing the Red Tide" — Sheikh Mohammed al-Ghazali','The Holy Quran','Sahih al-Bukhari and Muslim'],contact:'Contact: abdelhak.bourdim@gmail.com'},
-    fr:{disclaimerTitle:'⚠️ Avis Important',disclaimer:'Je ne suis ni savant ni mufti. C\'est un effort humble d\'un musulman qui aime les livres du Sheikh al-Ghazali. Ce n\'est pas une fatwa.',authorName:'Sheikh Mohammed al-Ghazali',authorDates:'1917 — 1996',authorBio:'Savant et penseur islamique egyptien. Auteur de plus de 94 livres. Diplome d\'Al-Azhar, professeur a l\'Universite Emir Abdelkader de Constantine (Algerie).',bookTitle:'A Propos du Livre',bookDesc:'"L\'Islam Face a la Maree Rouge" repond a l\'ideologie materialiste communiste avec des arguments rationnels et coraniques. Il montre que l\'Islam a precede le communisme en justice sociale tout en preservant la dignite humaine.',sourcesTitle:'Sources',sources:['"L\'Islam Face a la Maree Rouge" — Sheikh Mohammed al-Ghazali','Le Saint Coran','Sahih al-Bukhari et Muslim'],contact:'Contact : abdelhak.bourdim@gmail.com'}
+    ar: { disclaimerTitle:'⚠️ تنبيه مهم', disclaimer:'لست عالماً ولا مفتياً. هذا جهد متواضع من مسلم يحب كتب الشيخ الغزالي. المحتوى مستمد من الكتاب ومصادر إسلامية موثوقة. ليست فتوى.', authorName:'الشيخ محمد الغزالي', authorDates:'١٩١٧ — ١٩٩٦', authorBio:'عالم ومفكر إسلامي مصري، لُقب بـ"أديب الدعوة". ألّف أكثر من ٩٤ كتاباً. درس في الأزهر، ودرّس في جامعة الأمير عبد القادر بقسنطينة (الجزائر). حاصل على جائزة الملك فيصل.', bookTitle:'عن الكتاب', bookDesc:'«الإسلام في وجه الزحف الأحمر» كتاب يدافع عن قيم الإسلام في مواجهة الفكر المادي الإلحادي. يبيّن الشيخ الغزالي أن الإسلام يقدم بديلاً حضارياً متكاملاً يحفظ كرامة الإنسان وحريته ويحقق العدالة دون سحق الفرد أو إنكار الروح.', sourcesTitle:'المصادر', sources:['كتاب "الإسلام في وجه الزحف الأحمر" — الشيخ محمد الغزالي','القرآن الكريم','صحيح البخاري ومسلم','سنن الترمذي وأحمد'], contact:'تواصل: abdelhak.bourdim@gmail.com' },
+    en: { disclaimerTitle:'⚠️ Important Notice', disclaimer:'I am not a scholar or mufti. This is a humble effort by a Muslim who loves Sheikh al-Ghazali\'s books. Content is derived from the book and trusted Islamic sources. This is not a fatwa.', authorName:'Sheikh Mohammed al-Ghazali', authorDates:'1917 — 1996', authorBio:'Egyptian Islamic scholar and thinker, nicknamed "The Literary Preacher." Author of 94+ books. Studied at Al-Azhar, taught at the University of Emir Abdelkader in Constantine, Algeria. King Faisal Award winner.', bookTitle:'About the Book', bookDesc:'"Islam Facing the Red Tide" defends Islamic values against materialist atheistic ideology. Sheikh al-Ghazali shows that Islam offers a comprehensive civilizational alternative that preserves human dignity and freedom while achieving justice without crushing the individual or denying the spirit.', sourcesTitle:'Sources', sources:['"Islam Facing the Red Tide" — Sheikh Mohammed al-Ghazali','The Holy Quran','Sahih al-Bukhari and Muslim','Sunan at-Tirmidhi and Ahmad'], contact:'Contact: abdelhak.bourdim@gmail.com' },
+    fr: { disclaimerTitle:'⚠️ Avis Important', disclaimer:'Je ne suis ni savant ni mufti. C\'est un effort humble d\'un musulman qui aime les livres du Sheikh al-Ghazali. Le contenu est tire du livre et de sources islamiques fiables. Ce n\'est pas une fatwa.', authorName:'Sheikh Mohammed al-Ghazali', authorDates:'1917 — 1996', authorBio:'Savant et penseur islamique egyptien, surnomme "Le Litteraire de la Predication". Auteur de plus de 94 livres. Diplome d\'Al-Azhar, professeur a l\'Universite Emir Abdelkader de Constantine (Algerie). Laureat du Prix Roi Faysal.', bookTitle:'A Propos du Livre', bookDesc:'"L\'Islam Face a la Maree Rouge" defend les valeurs islamiques contre l\'ideologie materialiste atheiste. Le Sheikh al-Ghazali montre que l\'Islam offre une alternative civilisationnelle complete qui preserve la dignite humaine et la liberte tout en realisant la justice sans ecraser l\'individu ni nier l\'esprit.', sourcesTitle:'Sources', sources:['"L\'Islam Face a la Maree Rouge" — Sheikh Mohammed al-Ghazali','Le Saint Coran','Sahih al-Bukhari et Muslim','Sunan at-Tirmidhi et Ahmad'], contact:'Contact : abdelhak.bourdim@gmail.com' }
   };
   const a = about[lang];
-  document.getElementById('aboutContainer').innerHTML = `<div class="about-disclaimer"><div class="about-disclaimer-title">${a.disclaimerTitle}</div><p>${a.disclaimer}</p></div><div class="about-author"><span class="about-author-icon">📚</span><div class="about-author-info"><div class="about-author-name">${a.authorName}</div><div class="about-author-dates">${a.authorDates}</div><div class="about-author-bio">${a.authorBio}</div></div></div><div class="about-section"><div class="about-section-title">${a.bookTitle}</div><p class="about-text">${a.bookDesc}</p></div><div class="about-section"><div class="about-section-title">${a.sourcesTitle}</div>${a.sources.map(s=>`<p class="about-text">&#8226; ${s}</p>`).join('')}</div><div class="about-section"><p class="about-text">${a.contact}</p></div>`;
+  document.getElementById('aboutContainer').innerHTML = `<div class="about-disclaimer"><div class="about-disclaimer-title">${a.disclaimerTitle}</div><p>${a.disclaimer}</p></div><div class="about-author"><span class="about-author-icon">📚</span><div class="about-author-info"><div class="about-author-name">${a.authorName}</div><div class="about-author-dates">${a.authorDates}</div><div class="about-author-bio">${a.authorBio}</div></div></div><div class="about-section"><div class="about-section-title">${a.bookTitle}</div><p class="about-text">${a.bookDesc}</p></div><div class="about-section"><div class="about-section-title">${a.sourcesTitle}</div>${a.sources.map(s => `<p class="about-text">&#8226; ${s}</p>`).join('')}</div><div class="about-section"><p class="about-text">${a.contact}</p></div>`;
 }
 
+// ═══════════════ RENDER: HELP ═══════════════
 function renderHelp() {
-  const help={ar:[{title:'⚠️ تنبيه',body:'لست عالماً. هذا جهد متواضع لنشر حكمة الشيخ الغزالي.'},{title:'📚 المصادر',body:'كتاب "الإسلام في وجه الزحف الأحمر" للشيخ محمد الغزالي، القرآن الكريم.'},{title:'✨ المميزات',body:'ثلاث لغات، ٣ أنماط، ٢٠ بطاقة، ٥ مقارنات، تتبع العادات، اختبار.'}],en:[{title:'⚠️ Disclaimer',body:'I am not a scholar. This is a humble effort to share Sheikh al-Ghazali\'s wisdom.'},{title:'📚 Sources',body:'"Islam Facing the Red Tide" by Sheikh Mohammed al-Ghazali, the Holy Quran.'},{title:'✨ Features',body:'Three languages, 3 themes, 20 cards, 5 contrasts, habit tracker, quiz.'}],fr:[{title:'⚠️ Avertissement',body:'Je ne suis pas un savant. C\'est un effort humble.'},{title:'📚 Sources',body:'"L\'Islam Face a la Maree Rouge" par Sheikh al-Ghazali, le Saint Coran.'},{title:'✨ Fonctionnalites',body:'Trois langues, 3 themes, 20 cartes, 5 contrastes, suivi habitudes, quiz.'}]};
-  document.getElementById('helpBody').innerHTML = help[lang].map(h=>`<div class="help-item"><div class="help-item-title">${h.title}</div><div>${h.body}</div></div>`).join('');
+  const help = {
+    ar: [{title:'⚠️ تنبيه',body:'لست عالماً. هذا جهد متواضع لنشر حكمة الشيخ الغزالي بطريقة تفاعلية.'},{title:'📚 المصادر',body:'كتاب "الإسلام في وجه الزحف الأحمر" للشيخ محمد الغزالي، القرآن الكريم، السنة النبوية.'},{title:'✨ المميزات',body:'ثلاث لغات (عربي/إنجليزي/فرنسي)، ٣ أنماط، ١٥ قيمة، مسابقة تفاعلية، نظام نقاط وشارات، وضعان للأعمار.'},{title:'🌟 وضع مستكشف صغير',body:'للأطفال ٧-١٢ سنة — نصوص مبسطة بالإيموجي، خط أكبر.'},{title:'📖 وضع باحث شاب',body:'للشباب ١٣+ — نصوص كاملة مع آيات وأحاديث وتحليل.'},{title:'🤝 المساهمة',body:'GitHub: github.com/abourdim/al-islam-fi-wajh-al-zahf'}],
+    en: [{title:'⚠️ Disclaimer',body:'I am not a scholar. This is a humble effort to share Sheikh al-Ghazali\'s wisdom interactively.'},{title:'📚 Sources',body:'"Islam Facing the Red Tide" by Sheikh Mohammed al-Ghazali, the Holy Quran, Prophetic Sunnah.'},{title:'✨ Features',body:'Three languages (AR/EN/FR), 3 themes, 15 values, interactive quiz, XP and badges system, 2 age modes.'},{title:'🌟 Young Explorer',body:'For kids 7-12 — simplified text with emojis, larger font.'},{title:'📖 Teen Scholar',body:'For teens 13+ — full text with verses, hadiths, and analysis.'},{title:'🤝 Contributing',body:'GitHub: github.com/abourdim/al-islam-fi-wajh-al-zahf'}],
+    fr: [{title:'⚠️ Avertissement',body:'Je ne suis pas un savant. C\'est un effort humble pour partager la sagesse du Sheikh al-Ghazali.'},{title:'📚 Sources',body:'"L\'Islam Face a la Maree Rouge" par Sheikh Mohammed al-Ghazali, le Saint Coran, la Sunnah.'},{title:'✨ Fonctionnalites',body:'Trois langues (AR/EN/FR), 3 themes, 15 valeurs, quiz interactif, systeme XP et badges, 2 modes d\'age.'},{title:'🌟 Jeune Explorateur',body:'Pour enfants 7-12 ans — texte simplifie avec emojis, police plus grande.'},{title:'📖 Jeune Chercheur',body:'Pour ados 13+ — texte complet avec versets, hadiths et analyse.'},{title:'🤝 Contribuer',body:'GitHub : github.com/abourdim/al-islam-fi-wajh-al-zahf'}]
+  };
+  document.getElementById('helpBody').innerHTML = help[lang].map(h => `<div class="help-item"><div class="help-item-title">${h.title}</div><div>${h.body}</div></div>`).join('');
 }
 
-function renderDuas() { document.getElementById('duaPanelContent').innerHTML = DUAS.map(d=>{const dd=d[lang];return `<div class="dua-item"><div class="dua-item-label">${dd.label}</div><div class="dua-item-ar">${dd.text}</div><div class="dua-item-tr">${dd.tr}</div></div>`;}).join(''); }
+// ═══════════════ RENDER: DUAS ═══════════════
+function renderDuas() { document.getElementById('duaPanelContent').innerHTML = DUAS.map(d => { const dd = d[lang]; return `<div class="dua-item"><div class="dua-item-label">${dd.label}</div><div class="dua-item-ar">${dd.text}</div><div class="dua-item-tr">${dd.tr}</div></div>`; }).join(''); }
 
-function initScrollReveal() { if(!('IntersectionObserver' in window))return; window._scrollObserver=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('revealed');window._scrollObserver.unobserve(entry.target);}});},{threshold:0.08,rootMargin:'0px 0px -40px 0px'}); document.querySelectorAll('.scroll-reveal:not(.revealed)').forEach(el=>window._scrollObserver.observe(el)); document.querySelectorAll('.tab').forEach(tab=>{tab.addEventListener('click',()=>setTimeout(()=>{document.querySelectorAll('.scroll-reveal:not(.revealed)').forEach(el=>window._scrollObserver.observe(el));},100));}); }
+// ═══════════════ TICKER ═══════════════
+function renderTicker() {
+  const tips = { ar: ['📖 اكتشف قيمة جديدة كل يوم','🏆 اجمع النقاط واربح الشارات','🌟 جرب وضع المستكشف الصغير','🤲 لا تنسَ الدعاء بالثبات والهداية','⭐ أكمل ١٥ قيمة لتصبح خبيراً'], en: ['📖 Discover a new value every day','🏆 Collect points and earn badges','🌟 Try Young Explorer mode','🤲 Don\'t forget to make dua for steadfastness','⭐ Complete all 15 values to become an Expert'], fr: ['📖 Decouvrez une nouvelle valeur chaque jour','🏆 Collectez des points et gagnez des badges','🌟 Essayez le mode Jeune Explorateur','🤲 N\'oubliez pas les duas pour la fermete','⭐ Completez les 15 valeurs pour devenir Expert'] };
+  const items = tips[lang]; const doubled = [...items, ...items]; const ticker = document.getElementById('tickerText');
+  ticker.innerHTML = doubled.map(t => `<span class="tc">&nbsp;&nbsp;${t}&nbsp;&nbsp;•</span>`).join(''); ticker.style.animation = `tickerMarquee ${items.length * 6}s linear infinite`;
+}
 
-function initKeyboardNav() { document.addEventListener('keydown',(e)=>{ if(e.key==='Escape'){const hp=document.getElementById('helpPanel');if(!hp.classList.contains('hidden')){toggleHelp();return;}const dp=document.getElementById('duaPanel');if(!dp.classList.contains('hidden')){toggleDuaPanel();return;}document.querySelectorAll('.principle-card.open').forEach(c=>c.classList.remove('open'));} if(e.key==='ArrowRight'||e.key==='ArrowLeft'){const cp=document.getElementById('panel-cards');if(!cp||!cp.classList.contains('active'))return;if(document.activeElement&&document.activeElement.id==='cardsSearch')return;e.preventDefault();const cards=Array.from(document.querySelectorAll('.principle-card')).filter(c=>c.style.display!=='none');if(!cards.length)return;if(currentCardIdx>=0&&currentCardIdx<cards.length)cards[currentCardIdx].classList.remove('open');const dir=(document.documentElement.dir==='rtl')?(e.key==='ArrowRight'?-1:1):(e.key==='ArrowRight'?1:-1);currentCardIdx=Math.max(0,Math.min(cards.length-1,currentCardIdx+dir));cards[currentCardIdx].classList.add('open');cards[currentCardIdx].scrollIntoView({behavior:'smooth',block:'center'});playSound('click');} }); }
+// ═══════════════ SPLASH SCREEN ═══════════════
+let splashTimer;
+function initSplash() { const features = document.getElementById('splashFeatures'); if (features) { features.innerHTML = T[lang].splashFeatures.map((f, i) => `<div class="splash-feature" style="animation-delay:${0.3+i*0.3}s">${f}</div>`).join(''); } let count = 5; const counter = document.getElementById('splashCount'); splashTimer = setInterval(() => { count--; if (counter) counter.textContent = count; if (count <= 0) dismissSplash(); }, 1000); }
+function dismissSplash() { clearInterval(splashTimer); const splash = document.getElementById('splash'); if (splash) { splash.classList.add('hidden'); setTimeout(() => splash.remove(), 600); } }
 
-function toggleCard(id){const card=document.getElementById(id);if(card){card.classList.toggle('open');playSound('click');}}
-function toggleHelp(){document.getElementById('helpPanel').classList.toggle('hidden');playSound('click');}
-function toggleDuaPanel(){document.getElementById('duaPanel').classList.toggle('hidden');playSound('click');}
-function showToast(msg){const t=document.getElementById('toast');const m=document.getElementById('toastMsg');if(t&&m){m.textContent=msg;t.style.display='block';setTimeout(()=>t.style.display='none',2500);}}
-function initScrollTop(){const btn=document.getElementById('scrollTop');window.addEventListener('scroll',()=>{if(btn)btn.classList.toggle('visible',window.scrollY>300);});}
+// ═══════════════ TAB SWITCHING ═══════════════
+function initTabs() { document.querySelectorAll('.tab').forEach(tab => { tab.addEventListener('click', () => { switchTab(tab.dataset.tab); }); }); }
+function switchTab(name) { document.querySelectorAll('.panel').forEach(p => p.classList.remove('active')); document.querySelectorAll('.tab').forEach(t => t.classList.remove('active')); const panel = document.getElementById('panel-' + name); const tabBtn = document.querySelector(`.tab[data-tab="${name}"]`); if (panel) panel.classList.add('active'); if (tabBtn) tabBtn.classList.add('active'); window.scrollTo({ top: 0, behavior: 'smooth' }); playSound('click'); setTimeout(() => { document.querySelectorAll('.scroll-reveal:not(.revealed)').forEach(el => { if (window._scrollObserver) window._scrollObserver.observe(el); }); initTypewriter(); }, 100); }
 
-const AudioCtx=window.AudioContext||window.webkitAudioContext;let audioCtx;
-function playSound(type){try{if(!audioCtx)audioCtx=new AudioCtx();const osc=audioCtx.createOscillator();const gain=audioCtx.createGain();osc.connect(gain);gain.connect(audioCtx.destination);gain.gain.value=0.06;if(type==='click'){osc.frequency.value=800;osc.type='sine';gain.gain.value=0.04;}else if(type==='success'){osc.frequency.value=523;osc.type='sine';}else if(type==='theme'){osc.frequency.value=440;osc.type='triangle';gain.gain.value=0.05;}osc.start();osc.stop(audioCtx.currentTime+0.1);}catch(e){}}
+// ═══════════════ SCROLL REVEAL ═══════════════
+function initScrollReveal() { if (!('IntersectionObserver' in window)) return; window._scrollObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('revealed'); window._scrollObserver.unobserve(entry.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }); document.querySelectorAll('.scroll-reveal:not(.revealed)').forEach(el => window._scrollObserver.observe(el)); }
 
-(function(){let tX=0,tY=0;const tabOrder=['home','cards','contrasts','habits','quiz','about'];document.addEventListener('touchstart',(e)=>{tX=e.changedTouches[0].screenX;tY=e.changedTouches[0].screenY;},{passive:true});document.addEventListener('touchend',(e)=>{const dx=e.changedTouches[0].screenX-tX;const dy=e.changedTouches[0].screenY-tY;if(Math.abs(dx)<50||Math.abs(dy)>Math.abs(dx))return;const isRTL=document.documentElement.dir==='rtl';const at=document.querySelector('.tab.active');if(!at)return;const ci=tabOrder.indexOf(at.dataset.tab);if(ci<0)return;let ni=isRTL?(dx>0?ci+1:ci-1):(dx<0?ci+1:ci-1);if(ni>=0&&ni<tabOrder.length){const nt=document.querySelector(`.tab[data-tab="${tabOrder[ni]}"]`);if(nt)nt.click();}},{passive:true});})();
+// ═══════════════ KEYBOARD NAVIGATION ═══════════════
+function initKeyboardNav() { document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { const hp = document.getElementById('helpPanel'); if (!hp.classList.contains('hidden')) { toggleHelp(); return; } const dp = document.getElementById('duaPanel'); if (!dp.classList.contains('hidden')) { toggleDuaPanel(); return; } document.querySelectorAll('.trait-card.open').forEach(c => c.classList.remove('open')); } if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { const panel = document.getElementById('panel-traits'); if (!panel || !panel.classList.contains('active')) return; if (document.activeElement && document.activeElement.id === 'traitsSearch') return; e.preventDefault(); const cards = Array.from(document.querySelectorAll('.trait-card')).filter(c => c.style.display !== 'none'); if (!cards.length) return; if (currentPrincipleIdx >= 0 && currentPrincipleIdx < cards.length) cards[currentPrincipleIdx].classList.remove('open'); const dir = document.documentElement.dir === 'rtl' ? (e.key==='ArrowRight'?-1:1) : (e.key==='ArrowRight'?1:-1); currentPrincipleIdx = Math.max(0, Math.min(cards.length-1, currentPrincipleIdx+dir)); cards[currentPrincipleIdx].classList.add('open'); cards[currentPrincipleIdx].scrollIntoView({ behavior:'smooth', block:'center' }); playSound('click'); } }); }
 
-function startTicker(){var el=document.getElementById('tickerText');if(!el)return;var tips={ar:['🔴 ٢٠ بطاقة عن مواجهة الفكر المادي','⚖️ الإسلام سبق الشيوعية في العدالة','💎 الروحانية تملأ ما تعجز عنه المادة','📖 العلم يزيد الإيمان لا ينقصه','🤲 اللّهُمّ ثبّتنا على الحق','💡 Powered by workshop-diy.org'],en:['🔴 20 cards on confronting materialism','⚖️ Islam preceded communism in justice','💎 Spirituality fills what matter cannot','📖 Science increases faith','🤲 O God, keep us on the truth','💡 Powered by workshop-diy.org'],fr:['🔴 20 cartes sur la confrontation du materialisme','⚖️ L\'Islam a precede le communisme','💎 La spiritualite comble ce que la matiere ne peut','📖 La science augmente la foi','🤲 O Dieu, affermis-nous sur la verite','💡 Powered by workshop-diy.org']};var l=document.documentElement.lang||'ar';var msgs=tips[l]||tips.ar;var txt=msgs.join('  ✦  ');el.innerHTML='<span class="tc">'+txt+'  ✦  </span><span class="tc" aria-hidden="true">'+txt+'  ✦  </span>';el.style.animation='tickerMarquee '+Math.max(25,txt.length*0.12)+'s linear infinite';}
-if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',startTicker)}else{startTicker()}
+// ═══════════════ UTILITIES ═══════════════
+function toggleCard(id) { const card = document.getElementById(id); if (card) { card.classList.toggle('open'); playSound('click'); } }
+function toggleHelp() { document.getElementById('helpPanel').classList.toggle('hidden'); playSound('click'); }
+function toggleDuaPanel() { document.getElementById('duaPanel').classList.toggle('hidden'); playSound('click'); }
+function showToast(msg) { const t = document.getElementById('toast'); const m = document.getElementById('toastMsg'); if (t && m) { m.textContent = msg; t.style.display = 'block'; setTimeout(() => t.style.display = 'none', 2500); } }
+function initScrollTop() { const btn = document.getElementById('scrollTop'); window.addEventListener('scroll', () => { if (btn) btn.classList.toggle('visible', window.scrollY > 300); }); }
+
+// ═══════════════ SOUND EFFECTS ═══════════════
+const AudioCtx = window.AudioContext || window.webkitAudioContext; let audioCtx;
+function playSound(type) { try { if (!audioCtx) audioCtx = new AudioCtx(); const osc = audioCtx.createOscillator(); const gain = audioCtx.createGain(); osc.connect(gain); gain.connect(audioCtx.destination); gain.gain.value = 0.06; if (type==='click') { osc.frequency.value=800; osc.type='sine'; gain.gain.value=0.04; } else if (type==='success') { osc.frequency.value=523; osc.type='sine'; gain.gain.value=0.06; } else if (type==='theme') { osc.frequency.value=440; osc.type='triangle'; gain.gain.value=0.05; } osc.start(); osc.stop(audioCtx.currentTime + 0.1); } catch(e) {} }
+
+// ═══════════════ CONFETTI ═══════════════
+function launchConfetti() { const canvas = document.getElementById('confettiCanvas'); if (!canvas) return; canvas.style.display = 'block'; const ctx = canvas.getContext('2d'); canvas.width = window.innerWidth; canvas.height = window.innerHeight; const particles = []; const colors = ['#2E7D32','#4CAF50','#81C784','#A5D6A7','#FFD54F','#FF8A65','#4FC3F7']; for (let i = 0; i < 120; i++) { particles.push({ x:Math.random()*canvas.width, y:Math.random()*canvas.height-canvas.height, w:Math.random()*10+5, h:Math.random()*6+3, color:colors[Math.floor(Math.random()*colors.length)], vx:(Math.random()-0.5)*4, vy:Math.random()*3+2, rot:Math.random()*360, rotSpeed:(Math.random()-0.5)*10 }); } let frame = 0; function draw() { ctx.clearRect(0,0,canvas.width,canvas.height); particles.forEach(p => { p.x+=p.vx; p.y+=p.vy; p.rot+=p.rotSpeed; ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.rot*Math.PI/180); ctx.fillStyle=p.color; ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h); ctx.restore(); }); frame++; if (frame < 120) requestAnimationFrame(draw); else { ctx.clearRect(0,0,canvas.width,canvas.height); canvas.style.display='none'; } } draw(); }
+
+// ═══════════════ TYPEWRITER ═══════════════
+function initTypewriter() { const dailyTitle = document.querySelector('.daily-card .daily-title'); if (!dailyTitle || dailyTitle.dataset.twDone) return; const fullText = dailyTitle.textContent; dailyTitle.textContent = ''; dailyTitle.classList.add('typewriter-text'); dailyTitle.dataset.twDone = '1'; let i = 0; const speed = Math.max(30, 2000 / fullText.length); function typeChar() { if (i < fullText.length) { dailyTitle.textContent += fullText.charAt(i); i++; setTimeout(typeChar, speed); } else { setTimeout(() => dailyTitle.classList.add('tw-done'), 1500); } } setTimeout(typeChar, 500); }
+
+// ═══════════════ SWIPE GESTURES ═══════════════
+function initSwipeGestures() { let touchStartX = 0, touchStartY = 0; const tabOrder = ['home','traits','quiz','progress','about']; document.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; touchStartY = e.changedTouches[0].screenY; }, { passive: true }); document.addEventListener('touchend', e => { const dx = e.changedTouches[0].screenX - touchStartX; const dy = e.changedTouches[0].screenY - touchStartY; if (Math.abs(dx) < 80 || Math.abs(dy) > Math.abs(dx) * 0.5) return; const current = tabOrder.findIndex(t => { const p = document.getElementById('panel-'+t); return p && p.classList.contains('active'); }); if (current < 0) return; const isRTL = document.documentElement.dir === 'rtl'; let next; if ((dx > 0 && !isRTL) || (dx < 0 && isRTL)) next = current - 1; else next = current + 1; if (next >= 0 && next < tabOrder.length) switchTab(tabOrder[next]); }, { passive: true }); }
+
+// ═══════════════ INIT ═══════════════
+document.addEventListener('DOMContentLoaded', () => { document.body.classList.toggle('young-mode', ageMode === 'young'); updateStreak(); initSplash(); renderAll(); initTabs(); initScrollReveal(); initScrollTop(); initKeyboardNav(); initSwipeGestures(); initTypewriter(); });
