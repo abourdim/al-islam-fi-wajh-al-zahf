@@ -861,24 +861,24 @@ function toggleAgeMode() { ageMode = ageMode === 'young' ? 'teen' : 'young'; loc
 let lang = document.documentElement.lang || 'ar'; let currentTheme = document.documentElement.dataset.theme || 'nature';
 const THEMES = ['nature','night','ocean']; const THEME_ICONS = { nature:'🌿', night:'🌙', ocean:'🌊' }; let currentPrincipleIdx = -1;
 function setLang(l) { lang = l; document.documentElement.lang = l; document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr'; document.querySelectorAll('.lang-opt').forEach(b => b.classList.toggle('active', b.dataset.lang === l)); renderAll(); }
-function cycleTheme() { const idx = (THEMES.indexOf(currentTheme) + 1) % THEMES.length; currentTheme = THEMES[idx]; document.documentElement.dataset.theme = currentTheme; document.getElementById('themeIcon').textContent = THEME_ICONS[currentTheme]; playSound('theme'); }
+function cycleTheme() { const idx = (THEMES.indexOf(currentTheme) + 1) % THEMES.length; currentTheme = THEMES[idx]; document.documentElement.dataset.theme = currentTheme; { const _e=document.getElementById('themeIcon'); if(_e) _e.textContent=THEME_ICONS[currentTheme]; } playSound('theme'); }
 
 // ═══════════════ RENDER ALL ═══════════════
 function renderAll() {
   const t = T[lang];
-  document.getElementById('appTitle').textContent = t.appTitle; document.getElementById('splashSub').textContent = t.splashSub; document.getElementById('splashHint').textContent = t.splashHint;
-  document.getElementById('tabHome').textContent = t.tabHome; document.getElementById('tabTraits').textContent = t.tabTraits; document.getElementById('tabQuiz').textContent = t.tabQuiz; document.getElementById('tabProgress').textContent = t.tabProgress; document.getElementById('tabAbout').textContent = t.tabAbout;
-  document.getElementById('traitsTitle').textContent = t.traitsTitle; document.getElementById('traitsDesc').textContent = t.traitsDesc; document.getElementById('quizTitle').textContent = t.quizTitle; document.getElementById('quizDesc').textContent = t.quizDesc;
-  document.getElementById('progressTitle').textContent = t.progressTitle; document.getElementById('progressDesc').textContent = t.progressDesc; document.getElementById('helpTitle').textContent = t.helpTitle; document.getElementById('duaPanelTitle').textContent = t.duaPanelTitle;
-  document.getElementById('ageModeBtn').textContent = ageMode === 'young' ? t.youngMode : t.teenMode;
+  { const _e=document.getElementById('appTitle'); if(_e) _e.textContent=t.appTitle; } { const _e=document.getElementById('splashSub'); if(_e) _e.textContent=t.splashSub; } { const _e=document.getElementById('splashHint'); if(_e) _e.textContent=t.splashHint; }
+  { const _e=document.getElementById('tabHome'); if(_e) _e.textContent=t.tabHome; } { const _e=document.getElementById('tabTraits'); if(_e) _e.textContent=t.tabTraits; } { const _e=document.getElementById('tabQuiz'); if(_e) _e.textContent=t.tabQuiz; } { const _e=document.getElementById('tabProgress'); if(_e) _e.textContent=t.tabProgress; } { const _e=document.getElementById('tabAbout'); if(_e) _e.textContent=t.tabAbout; }
+  { const _e=document.getElementById('traitsTitle'); if(_e) _e.textContent=t.traitsTitle; } { const _e=document.getElementById('traitsDesc'); if(_e) _e.textContent=t.traitsDesc; } { const _e=document.getElementById('quizTitle'); if(_e) _e.textContent=t.quizTitle; } { const _e=document.getElementById('quizDesc'); if(_e) _e.textContent=t.quizDesc; }
+  { const _e=document.getElementById('progressTitle'); if(_e) _e.textContent=t.progressTitle; } { const _e=document.getElementById('progressDesc'); if(_e) _e.textContent=t.progressDesc; } { const _e=document.getElementById('helpTitle'); if(_e) _e.textContent=t.helpTitle; } { const _e=document.getElementById('duaPanelTitle'); if(_e) _e.textContent=t.duaPanelTitle; }
+  { const _e=document.getElementById('ageModeBtn'); if(_e) _e.textContent=ageMode === 'young' ? t.youngMode : t.teenMode; }
   renderHome(); renderTraits(); renderProgress(); renderAbout(); renderHelp(); renderDuas(); renderTicker();
 }
 
 // ═══════════════ RENDER: HOME ═══════════════
 function renderHome() {
   const t = T[lang]; const dayIdx = new Date().getDate() % TRAITS.length; const trait = TRAITS[dayIdx]; const d = trait[lang];
-  document.getElementById('dailyCard').innerHTML = `<div class="daily-label">${t.dailyLabel}</div><div class="daily-title">${trait.emoji} ${d.title}</div><div class="daily-body">${ageMode === 'young' ? d.young : d.desc}</div><div class="daily-action" onclick="switchTab('traits');toggleCard('trait-${trait.id}')">${t.readMore} &#8594;</div>`;
-  document.getElementById('homeGrid').innerHTML = TRAITS.map(tr => { const dd = tr[lang]; return `<div class="home-card" onclick="switchTab('traits');toggleCard('trait-${tr.id}')"><span class="hc-icon">${tr.emoji}</span><div class="hc-title">${dd.title}</div></div>`; }).join('');
+  (document.getElementById('dailyCard')||{}).innerHTML= `<div class="daily-label">${t.dailyLabel}</div><div class="daily-title">${trait.emoji} ${d.title}</div><div class="daily-body">${ageMode === 'young' ? d.young : d.desc}</div><div class="daily-action" onclick="switchTab('traits');toggleCard('trait-${trait.id}')">${t.readMore} &#8594;</div>`;
+  (document.getElementById('homeGrid')||{}).innerHTML= TRAITS.map(tr => { const dd = tr[lang]; return `<div class="home-card" onclick="switchTab('traits');toggleCard('trait-${tr.id}')"><span class="hc-icon">${tr.emoji}</span><div class="hc-title">${dd.title}</div></div>`; }).join('');
 }
 
 // ═══════════════ RENDER: TRAITS ═══════════════
@@ -915,7 +915,7 @@ function showQuizResult() {
   const t = T[lang]; const total = QUIZ.length; const pct = Math.round(quizState.score / total * 100);
   const best = parseInt(localStorage.getItem(QUIZ_BEST_KEY) || '0'); if (pct > best) localStorage.setItem(QUIZ_BEST_KEY, pct); addXP(20);
   let emoji, title; if (pct >= 80) { emoji = '🏆'; title = lang==='ar'?'عالم حقيقي!':lang==='fr'?'Un vrai savant !':'A True Scholar!'; } else if (pct >= 50) { emoji = '📖'; title = lang==='ar'?'جيد جداً!':lang==='fr'?'Tres bien !':'Very Good!'; } else { emoji = '🌱'; title = lang==='ar'?'واصل التعلم!':lang==='fr'?'Continue d\'apprendre !':'Keep Learning!'; }
-  document.getElementById('quizContainer').innerHTML = ''; const result = document.getElementById('quizResult'); result.classList.remove('hidden');
+  (document.getElementById('quizContainer')||{}).innerHTML= ''; const result = document.getElementById('quizResult'); result.classList.remove('hidden');
   result.innerHTML = `<div class="qr-emoji">${emoji}</div><div class="qr-score">${quizState.score}/${total}</div><div class="qr-title">${title}</div><div class="qr-desc">${pct}%</div><button class="quiz-submit" onclick="renderQuiz()">${t.tryAgain}</button>`;
   result.scrollIntoView({ behavior: 'smooth' }); if (pct >= 80) launchConfetti(); quizState.active = false;
 }
@@ -923,7 +923,7 @@ function showQuizResult() {
 // ═══════════════ RENDER: PROGRESS ═══════════════
 function renderProgress() {
   const t = T[lang]; const xp = getXP(); const level = getLevel(xp); const streak = getStreak().count; const readTraits = getReadTraits(); const earned = getEarnedBadges(); const bestQuiz = parseInt(localStorage.getItem(QUIZ_BEST_KEY) || '0'); const nextBadge = BADGE_DEFS.find(b => !earned.includes(b.id)); const nextXP = nextBadge ? nextBadge.xp : 1000; const progressPct = Math.min(100, (xp / nextXP) * 100);
-  document.getElementById('progressContainer').innerHTML = `
+  (document.getElementById('progressContainer')||{}).innerHTML= `
     <div class="progress-xp-card"><div class="xp-header"><span class="xp-icon">⭐</span><span class="xp-amount">${xp} ${t.xpLabel}</span></div><div class="xp-bar-wrap"><div class="xp-bar"><div class="xp-bar-fill" style="width:${progressPct}%"></div></div><span class="xp-level">${t.levelLabel} ${level}</span></div>${nextBadge ? `<div class="xp-next">${lang==='ar'?'التالي:':lang==='fr'?'Suivant:':'Next:'} ${nextBadge.emoji} ${nextBadge[lang]} (${nextBadge.xp} XP)</div>` : ''}</div>
     ${streak > 0 ? `<div class="streak-badge">🔥 ${streak} ${t.streakMsg}</div>` : ''}
     <div class="progress-stats"><div class="stat-card"><span class="stat-num">${readTraits.length}</span><span class="stat-label">${lang==='ar'?'قيمة مقروءة':lang==='fr'?'Valeurs lues':'Values Read'}</span><span class="stat-total">/ ${TRAITS.length}</span></div><div class="stat-card"><span class="stat-num">${bestQuiz}%</span><span class="stat-label">${lang==='ar'?'أفضل نتيجة':lang==='fr'?'Meilleur score':'Best Quiz'}</span></div><div class="stat-card"><span class="stat-num">${earned.length}</span><span class="stat-label">${lang==='ar'?'شارات':lang==='fr'?'Badges':'Badges'}</span><span class="stat-total">/ ${BADGE_DEFS.length}</span></div></div>
@@ -939,7 +939,7 @@ function renderAbout() {
     fr: { disclaimerTitle:'⚠️ Avis Important', disclaimer:'Je ne suis ni savant ni mufti. C\'est un effort humble d\'un musulman qui aime les livres du Sheikh al-Ghazali. Le contenu est tire du livre et de sources islamiques fiables. Ce n\'est pas une fatwa.', authorName:'Sheikh Mohammed al-Ghazali', authorDates:'1917 — 1996', authorBio:'Savant et penseur islamique egyptien, surnomme "Le Litteraire de la Predication". Auteur de plus de 94 livres. Diplome d\'Al-Azhar, professeur a l\'Universite Emir Abdelkader de Constantine (Algerie). Laureat du Prix Roi Faysal.', bookTitle:'A Propos du Livre', bookDesc:'"L\'Islam Face a la Maree Rouge" defend les valeurs islamiques contre l\'ideologie materialiste atheiste. Le Sheikh al-Ghazali montre que l\'Islam offre une alternative civilisationnelle complete qui preserve la dignite humaine et la liberte tout en realisant la justice sans ecraser l\'individu ni nier l\'esprit.', sourcesTitle:'Sources', sources:['"L\'Islam Face a la Maree Rouge" — Sheikh Mohammed al-Ghazali','Le Saint Coran','Sahih al-Bukhari et Muslim','Sunan at-Tirmidhi et Ahmad'], contact:'Contact : abdelhak.bourdim@gmail.com' }
   };
   const a = about[lang];
-  document.getElementById('aboutContainer').innerHTML = `<div class="about-disclaimer"><div class="about-disclaimer-title">${a.disclaimerTitle}</div><p>${a.disclaimer}</p></div><div class="about-author"><span class="about-author-icon">📚</span><div class="about-author-info"><div class="about-author-name">${a.authorName}</div><div class="about-author-dates">${a.authorDates}</div><div class="about-author-bio">${a.authorBio}</div></div></div><div class="about-section"><div class="about-section-title">${a.bookTitle}</div><p class="about-text">${a.bookDesc}</p></div><div class="about-section"><div class="about-section-title">${a.sourcesTitle}</div>${a.sources.map(s => `<p class="about-text">&#8226; ${s}</p>`).join('')}</div><div class="about-section"><p class="about-text">${a.contact}</p></div>`;
+  (document.getElementById('aboutContainer')||{}).innerHTML= `<div class="about-disclaimer"><div class="about-disclaimer-title">${a.disclaimerTitle}</div><p>${a.disclaimer}</p></div><div class="about-author"><span class="about-author-icon">📚</span><div class="about-author-info"><div class="about-author-name">${a.authorName}</div><div class="about-author-dates">${a.authorDates}</div><div class="about-author-bio">${a.authorBio}</div></div></div><div class="about-section"><div class="about-section-title">${a.bookTitle}</div><p class="about-text">${a.bookDesc}</p></div><div class="about-section"><div class="about-section-title">${a.sourcesTitle}</div>${a.sources.map(s => `<p class="about-text">&#8226; ${s}</p>`).join('')}</div><div class="about-section"><p class="about-text">${a.contact}</p></div>`;
 }
 
 // ═══════════════ RENDER: HELP ═══════════════
@@ -949,11 +949,11 @@ function renderHelp() {
     en: [{title:'⚠️ Disclaimer',body:'I am not a scholar. This is a humble effort to share Sheikh al-Ghazali\'s wisdom interactively.'},{title:'📚 Sources',body:'"Islam Facing the Red Tide" by Sheikh Mohammed al-Ghazali, the Holy Quran, Prophetic Sunnah.'},{title:'✨ Features',body:'Three languages (AR/EN/FR), 3 themes, 15 values, interactive quiz, XP and badges system, 2 age modes.'},{title:'🌟 Young Explorer',body:'For kids 7-12 — simplified text with emojis, larger font.'},{title:'📖 Teen Scholar',body:'For teens 13+ — full text with verses, hadiths, and analysis.'},{title:'🤝 Contributing',body:'GitHub: github.com/abourdim/al-islam-fi-wajh-al-zahf'}],
     fr: [{title:'⚠️ Avertissement',body:'Je ne suis pas un savant. C\'est un effort humble pour partager la sagesse du Sheikh al-Ghazali.'},{title:'📚 Sources',body:'"L\'Islam Face a la Maree Rouge" par Sheikh Mohammed al-Ghazali, le Saint Coran, la Sunnah.'},{title:'✨ Fonctionnalites',body:'Trois langues (AR/EN/FR), 3 themes, 15 valeurs, quiz interactif, systeme XP et badges, 2 modes d\'age.'},{title:'🌟 Jeune Explorateur',body:'Pour enfants 7-12 ans — texte simplifie avec emojis, police plus grande.'},{title:'📖 Jeune Chercheur',body:'Pour ados 13+ — texte complet avec versets, hadiths et analyse.'},{title:'🤝 Contribuer',body:'GitHub : github.com/abourdim/al-islam-fi-wajh-al-zahf'}]
   };
-  document.getElementById('helpBody').innerHTML = help[lang].map(h => `<div class="help-item"><div class="help-item-title">${h.title}</div><div>${h.body}</div></div>`).join('');
+  (document.getElementById('helpBody')||{}).innerHTML= help[lang].map(h => `<div class="help-item"><div class="help-item-title">${h.title}</div><div>${h.body}</div></div>`).join('');
 }
 
 // ═══════════════ RENDER: DUAS ═══════════════
-function renderDuas() { document.getElementById('duaPanelContent').innerHTML = DUAS.map(d => { const dd = d[lang]; return `<div class="dua-item"><div class="dua-item-label">${dd.label}</div><div class="dua-item-ar">${dd.text}</div><div class="dua-item-tr">${dd.tr}</div></div>`; }).join(''); }
+function renderDuas() { (document.getElementById('duaPanelContent')||{}).innerHTML= DUAS.map(d => { const dd = d[lang]; return `<div class="dua-item"><div class="dua-item-label">${dd.label}</div><div class="dua-item-ar">${dd.text}</div><div class="dua-item-tr">${dd.tr}</div></div>`; }).join(''); }
 
 // ═══════════════ TICKER ═══════════════
 function renderTicker() {
@@ -969,7 +969,11 @@ function dismissSplash() { clearInterval(splashTimer); const splash = document.g
 
 // ═══════════════ TAB SWITCHING ═══════════════
 function initTabs() { document.querySelectorAll('.tab').forEach(tab => { tab.addEventListener('click', () => { switchTab(tab.dataset.tab); }); }); }
-function switchTab(name) { document.querySelectorAll('.panel').forEach(p => p.classList.remove('active')); document.querySelectorAll('.tab').forEach(t => t.classList.remove('active')); const panel = document.getElementById('panel-' + name); const tabBtn = document.querySelector(`.tab[data-tab="${name}"]`); if (panel) panel.classList.add('active'); if (tabBtn) tabBtn.classList.add('active'); window.scrollTo({ top: 0, behavior: 'smooth' }); playSound('click'); setTimeout(() => { document.querySelectorAll('.scroll-reveal:not(.revealed)').forEach(el => { if (window._scrollObserver) window._scrollObserver.observe(el); }); initTypewriter(); }, 100); }
+function switchTab(name) { document.querySelectorAll('.panel').forEach(p => p.classList.remove('active')); document.querySelectorAll('.tab').forEach(t => t.classList.remove('active')); const panel = document.getElementById('panel-' + name); const tabBtn = document.querySelector(`.tab[data-tab="${name}"]`); if (panel) panel.classList.add('active'); if (tabBtn) tabBtn.classList.add('active'); window.scrollTo({ top: 0, behavior: 'smooth' }); playSound('click'); setTimeout(() => { document.querySelectorAll('.scroll-reveal:not(.revealed)').forEach(el => { if (window._scrollObserver) window._scrollObserver.observe(el); }); initTypewriter(); }, 100);   // Auto-render quiz when switching to quiz tab
+  if (name === 'quiz' && document.getElementById('quizContainer') && !document.getElementById('quizContainer').innerHTML.trim()) {
+    renderQuiz();
+  }
+}
 
 // ═══════════════ SCROLL REVEAL ═══════════════
 function initScrollReveal() { if (!('IntersectionObserver' in window)) return; window._scrollObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('revealed'); window._scrollObserver.unobserve(entry.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }); document.querySelectorAll('.scroll-reveal:not(.revealed)').forEach(el => window._scrollObserver.observe(el)); }
